@@ -13,11 +13,3 @@ header span {
     cursor: pointer;
 }
 
-header span input {
-    cursor: pointer;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    opacity: 0;
-}
-
