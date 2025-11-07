@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Mateus Artico">
-    <meta name="description" content="Esse é um projeto simples feito somente com HTML5 e CSS3 para treinar a criação de sites semânticos.">
+    <meta name="description"
+        content="Esse é um projeto simples feito somente com HTML5 e CSS3 para treinar a criação de sites semânticos.">
     <title>Youtube</title>
 
     <link rel="stylesheet" href="style.css">
@@ -12,6 +14,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 </head>
+
 <body>
 
     <!--
@@ -19,17 +22,102 @@
         criar imagens -> https://placehold.co/300x200/
         material icons -> material-icons classe
     -->
-    
+
     <header>
-        <span class="material-icons">menu</span>
-        <figure>
-            <img src="https://placehold.co/93x20/" alt="">
-        </figure>
+        <section id="menu">
+            <span class="material-icons">menu</span>
+            <figure>
+                <img src="https://placehold.co/93x20/" alt="">
+            </figure>
+        </section>
+        <search>
+            <form action="" method="get">
+                <input type="text" placeholder="Search">
+                <button type="submit">
+                    <span class="material-icons">search</span>
+                </button>
+            </form>
+            <button id="mic">
+                <span class="material-icons">mic</span>
+            </button>
+        </search>
+        <section id="account">
+            <button href="#">
+                <span class="link-content">
+                    <span class="material-icons">add</span>
+                    <span class="text">Create</span>
+                </span>
+            </button>
+            <span class="material-icons">notifications</span>
+            <figure>
+                <img src="https://placehold.co/35x35/" alt="perfil">
+            </figure>
+        </section>
     </header>
 
     <main>
         <nav>
-            
+            <section id="main-navigation">
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">home</span>
+                        <span class="text">Home</span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">local_fire_department</span>
+                        <span class="text">Shorts</span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">subscriptions</span>
+                        <span class="text">Subscriptions</span>
+                    </span>
+                </a>
+            </section>
+            <hr>
+            <section id="you-navigation">
+                <a href="#">
+                    <span class="link-content">
+                        <span class="text">You</span>
+                        <span class="material-icons" id="arrow-forward">arrow_forward_ios</span>
+                    </span>
+                </a>
+
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">history</span>
+                        <span class="text">History</span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">list</span>
+                        <span class="text">Playlists</span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">school</span>
+                        <span class="text">Courses</span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">schedule</span>
+                        <span class="text">Watch later</span>
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="link-content">
+                        <span class="material-icons">thumb_up</span>
+                        <span class="text">Liked videos</span>
+                    </span>
+                </a>
+            </section>
+            <hr>
         </nav>
         <section class="view-video">
 
@@ -37,4 +125,5 @@
     </main>
 
 </body>
+
 </html>

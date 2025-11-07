@@ -1,15 +1,135 @@
 * {
     padding: 0;
     margin: 0;
+
+    font-family: "Poppins";
 }
 
 header {
     display: flex;
-    gap: 20px;
+    gap: 100px;
     padding: 20px;
+
+    position:sticky;
+}
+
+header #menu {
+    display: flex;
+    gap: 20px;
 }
 
 header span {
     cursor: pointer;
 }
 
+header search {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+}
+
+header form {
+    border: 1px solid gray;
+    display: flex;
+    border-radius: 50px;
+    overflow: hidden;
+
+    width: 30%;
+}
+
+header form input:focus {
+    outline: none;
+}
+
+header button, input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 0;
+    border: none;
+    border-left: 1px solid gray;
+}
+
+header input {
+    width: 100%;
+}
+
+header #mic {
+    border:none;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+header #account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header #account button {
+    border: 0;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 5px 10px;
+}
+
+header #account figure {
+    border: 1px solid gray;
+    height: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .link-content {
+    display: flex;
+    gap: 5px;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+
+main nav {
+    border-right: 1px solid #f0f0f0;
+    padding: 20px;
+    display: flex;
+    width: fit-content;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 87vh;
+    position: sticky;
+}
+
+nav hr {
+    color: #f0f0f0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.1s;
+}
+
+nav a .link-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav #arrow-forward {
+    font-size: 13px;
+}
