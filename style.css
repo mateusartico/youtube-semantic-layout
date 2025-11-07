@@ -226,6 +226,23 @@ main {
     font-weight: 500;
 }
 
+.thumbnail button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    border: 0;
+}
+
 .video-info {
     display: flex;
     gap: 12px;
@@ -238,6 +255,14 @@ main {
 
 }
 
+.details address {
+    display: flex;
+    gap: 3px;
+}
+
+.details address strong {
+    color: black;
+}
 
 .details h3 {
     font-size: 16px;
