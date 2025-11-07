@@ -132,6 +132,10 @@ main {
     transition: background 0.1s;
 }
 
+.sidebar nav a.active {
+    background-color: #f2f2f2;
+}
+
 .sidebar nav a:hover {
     background: #f2f2f2;
 }
