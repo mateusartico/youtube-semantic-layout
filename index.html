@@ -24,102 +24,61 @@
     -->
 
     <header>
-        <section id="menu">
-            <span class="material-icons">menu</span>
-            <figure>
-                <img src="https://placehold.co/93x20/" alt="">
-            </figure>
-        </section>
+        <nav id="menu">
+            <button class="menu-toggle" aria-label="Menu">
+                <span class="material-icons">menu</span>
+            </button>
+            <a href="/" class="logo">
+                <img src="https://placehold.co/93x20/" alt="YouTube">
+            </a>
+        </nav>
         <search>
-            <form action="" method="get">
-                <input type="text" placeholder="Search">
-                <button type="submit">
+            <form action="" method="get" role="search">
+                <input type="search" placeholder="Search" aria-label="Search">
+                <button type="submit" aria-label="Search">
                     <span class="material-icons">search</span>
                 </button>
             </form>
-            <button id="mic">
+            <button id="mic" aria-label="Voice search">
                 <span class="material-icons">mic</span>
             </button>
         </search>
-        <section id="account">
-            <button href="#">
-                <span class="link-content">
-                    <span class="material-icons">add</span>
-                    <span class="text">Create</span>
-                </span>
+        <nav id="account">
+            <button class="create-btn">
+                <span class="material-icons">add</span>
+                <span>Create</span>
             </button>
-            <span class="material-icons">notifications</span>
-            <figure>
-                <img src="https://placehold.co/35x35/" alt="perfil">
-            </figure>
-        </section>
+            <button class="notifications-btn" aria-label="Notifications">
+                <span class="material-icons">notifications</span>
+            </button>
+            <button class="profile-btn" aria-label="Account menu">
+                <img src="https://placehold.co/35x35/" alt="Profile">
+            </button>
+        </nav>
     </header>
 
     <main>
-        <nav>
-            <section id="main-navigation">
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">home</span>
-                        <span class="text">Home</span>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">local_fire_department</span>
-                        <span class="text">Shorts</span>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">subscriptions</span>
-                        <span class="text">Subscriptions</span>
-                    </span>
-                </a>
-            </section>
+        <aside class="sidebar">
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li><a href="#"><span class="material-icons">home</span>Home</a></li>
+                    <li><a href="#"><span class="material-icons">local_fire_department</span>Shorts</a></li>
+                    <li><a href="#"><span class="material-icons">subscriptions</span>Subscriptions</a></li>
+                </ul>
+            </nav>
             <hr>
-            <section id="you-navigation">
-                <a href="#">
-                    <span class="link-content">
-                        <span class="text">You</span>
-                        <span class="material-icons" id="arrow-forward">arrow_forward_ios</span>
-                    </span>
-                </a>
-
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">history</span>
-                        <span class="text">History</span>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">list</span>
-                        <span class="text">Playlists</span>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">school</span>
-                        <span class="text">Courses</span>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">schedule</span>
-                        <span class="text">Watch later</span>
-                    </span>
-                </a>
-                <a href="#">
-                    <span class="link-content">
-                        <span class="material-icons">thumb_up</span>
-                        <span class="text">Liked videos</span>
-                    </span>
-                </a>
-            </section>
-            <hr>
-        </nav>
-        <section class="view-video">
+            <nav aria-label="Personal navigation">
+                <h3>You <span class="material-icons">arrow_forward_ios</span></h3>
+                <ul>
+                    <li><a href="#"><span class="material-icons">history</span>History</a></li>
+                    <li><a href="#"><span class="material-icons">list</span>Playlists</a></li>
+                    <li><a href="#"><span class="material-icons">school</span>Courses</a></li>
+                    <li><a href="#"><span class="material-icons">schedule</span>Watch later</a></li>
+                    <li><a href="#"><span class="material-icons">thumb_up</span>Liked videos</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <section class="content" role="main">
 
         </section>
     </main>

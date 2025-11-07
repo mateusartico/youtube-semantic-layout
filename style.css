@@ -1,135 +1,158 @@
 * {
-    padding: 0;
     margin: 0;
-
+    padding: 0;
     font-family: "Poppins";
 }
 
 header {
     display: flex;
-    gap: 100px;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
-
-    position:sticky;
+    position: sticky;
+    top: 0;
+    background: white;
 }
 
-header #menu {
+header nav {
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
-header span {
+.menu-toggle, .notifications-btn, .profile-btn {
+    background: none;
+    border: none;
     cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
 }
 
-header search {
+.logo img {
+    height: 20px;
+}
+
+search {
     display: flex;
-    justify-content: right;
     align-items: center;
     gap: 15px;
-    width: 100%;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 40px;
 }
 
-header form {
-    border: 1px solid gray;
+search form {
     display: flex;
+    border: 1px solid #ccc;
     border-radius: 50px;
     overflow: hidden;
-
-    width: 30%;
+    flex: 1;
 }
 
-header form input:focus {
+search input {
+    border: none;
+    padding: 10px 16px;
+    flex: 1;
     outline: none;
 }
 
-header button, input {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 12px;
-    border-radius: 0;
+search button {
+    background: #f8f9fa;
     border: none;
-    border-left: 1px solid gray;
-}
-
-header input {
-    width: 100%;
-}
-
-header #mic {
-    border:none;
-    border-radius: 50%;
-    padding: 5px;
-}
-
-header #account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-header #account button {
-    border: 0;
-    border-radius: 50px;
-    overflow: hidden;
-    padding: 5px 10px;
-}
-
-header #account figure {
-    border: 1px solid gray;
-    height: 35px;
-    overflow: hidden;
-    border-radius: 50%;
+    padding: 10px 16px;
     cursor: pointer;
 }
 
-header .link-content {
-    display: flex;
-    gap: 5px;
-    justify-content: left;
-    align-items: center;
-    width: 100%;
+#mic {
+    background: #f8f9fa;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
 }
 
-
-main nav {
-    border-right: 1px solid #f0f0f0;
-    padding: 20px;
+#account {
     display: flex;
-    width: fit-content;
-    gap: 20px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 87vh;
+    align-items: center;
+    gap: 16px;
+}
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.profile-btn img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    width: 240px;
+    border-right: 1px solid #e5e5e5;
+    padding: 12px 0;
+    height: calc(100vh - 80px);
     position: sticky;
+    top: 80px;
+    overflow-y: auto;
 }
 
-nav hr {
-    color: #f0f0f0;
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-nav a {
+.sidebar nav li {
+    margin: 0;
+}
+
+.sidebar nav a {
     display: flex;
     align-items: center;
+    gap: 24px;
+    padding: 10px 24px;
     text-decoration: none;
-    color: black;
-    padding: 8px 12px;
-    border-radius: 8px;
+    color: #0f0f0f;
+    border-radius: 10px;
+    margin: 0 12px;
     transition: background 0.1s;
 }
 
-nav a .link-content {
+.sidebar nav a:hover {
+    background: #f2f2f2;
+}
+
+.sidebar h3 {
     display: flex;
-    gap: 20px;
     align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-nav a:hover {
-    background-color: #f0f0f0;
+.sidebar h3 .material-icons {
+    font-size: 16px;
 }
 
-nav #arrow-forward {
-    font-size: 13px;
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+    margin: 12px 0;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
 }
