@@ -1,0 +1,211 @@
+<!-- Declaração DOCTYPE define este como documento HTML5 para renderização adequada do navegador -->
+<!DOCTYPE html>
+<!-- Elemento html com atributo lang melhora acessibilidade para leitores de tela e SEO -->
+<html lang="pt-br">
+
+<head>
+    <!-- Codificação de caracteres garante exibição adequada de caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Meta tag viewport habilita design responsivo para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag author fornece valor SEO e atribuição de conteúdo -->
+    <meta name="author" content="Mateus Artico">
+    <!-- Meta tag description é crucial para SEO e snippets de mecanismos de busca -->
+    <meta name="description" content="Canal do Mateus Artico - Estatísticas, informações e conteúdo sobre desenvolvimento web e tecnologia.">
+    <!-- Tag title é essencial para SEO e identificação da aba do navegador -->
+    <title>Youtube - @mateusartico</title>
+
+    <!-- Folhas de estilo para apresentação visual -->
+    <link rel="stylesheet" href="../assets/css/channel.css">
+
+    <!-- Google Fonts para Material Icons e tipografia -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header reutilizado para consistência -->
+    <header role="banner">
+        <nav id="menu" aria-label="Menu principal">
+            <button class="menu-toggle" aria-label="Alternar menu de navegação">
+                <span class="material-icons" aria-hidden="true">menu</span>
+            </button>
+            <a href="../index.html" class="logo" aria-label="Página inicial do YouTube">
+                <img src="https://placehold.co/93x20/" alt="Logo do YouTube">
+            </a>
+        </nav>
+        <search role="search">
+            <form action="" method="get" role="search">
+                <input type="search" placeholder="Pesquisar" aria-label="Pesquisar vídeos">
+                <button type="submit" aria-label="Enviar pesquisa">
+                    <span class="material-icons" aria-hidden="true">search</span>
+                </button>
+            </form>
+            <button id="mic" aria-label="Busca por voz">
+                <span class="material-icons" aria-hidden="true">mic</span>
+            </button>
+        </search>
+        <nav id="account" aria-label="Ações da conta">
+            <button class="create-btn" aria-label="Criar novo conteúdo">
+                <span class="material-icons" aria-hidden="true">add</span>
+                <span>Criar</span>
+            </button>
+            <button class="notifications-btn" aria-label="Ver notificações">
+                <span class="material-icons" aria-hidden="true">notifications</span>
+            </button>
+            <button class="profile-btn" aria-label="Abrir menu da conta">
+                <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
+            </button>
+        </nav>
+    </header>
+
+    <!-- Elemento main contém o conteúdo primário da página do canal -->
+    <main role="main">
+        <!-- Banner do canal -->
+        <section class="channel-banner">
+            <!-- Figure agrupa imagem de banner com sua descrição -->
+            <figure>
+                <img src="https://placehold.co/1200x300/4285f4/ffffff?text=Mateus+Artico%0AChannel+Testeeee" alt="Banner do canal Mateus Artico">
+                <figcaption class="sr-only">Banner promocional do canal com logo e branding</figcaption>
+            </figure>
+        </section>
+
+        <!-- Informações principais do canal -->
+        <section class="channel-header">
+            <figure class="channel-avatar">
+                <img src="https://placehold.co/120x120/" alt="Avatar do canal Mateus Artico">
+            </figure>
+            
+            <div class="channel-info">
+                <!-- H1 como título principal da página -->
+                <h1>Mateus Artico</h1>
+                <!-- Address para informações de contato do criador -->
+                <address class="channel-handle"><strong>@mateusartico</strong></address>
+                <p class="subscriber-count">
+                    <data value="15420" aria-label="15 mil e 420 inscritos">15,4 mil inscritos</data> • 
+                    <data value="127" aria-label="127 vídeos">127 vídeos</data>
+                </p>
+                <div class="channel-description">
+                    <p>Desenvolvedor apaixonado por...</p>
+                </div>
+                <details class="channel-description">
+                    <summary> </summary>
+                    <mark>HTML semântico</mark> e acessibilidade. 
+                    Compartilho tutoriais sobre <abbr title="HyperText Markup Language">HTML</abbr>, 
+                    <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript.
+                </details>
+
+                <button class="subscribe-btn">Inscrever-se</button>
+            </div>
+        </section>
+
+        <!-- Navegação das abas do canal -->
+        <nav class="channel-tabs" aria-label="Navegação do canal">
+            <ul role="tablist">
+                <li role="presentation">
+                    <button role="tab" aria-selected="true" aria-controls="videos-panel" id="videos-tab">Vídeos</button>
+                </li>
+                <li role="presentation">
+                    <button role="tab" aria-selected="false" aria-controls="about-panel" id="playlist-tab">Playlists</button>
+                </li>
+                <li role="presentation">
+                    <button role="tab" aria-selected="false" aria-controls="stats-panel" id="posts-tab">Posts</button>
+                </li>
+                <li role="search">
+                    <button aria-selected="false" aria-controls="search-area" id="search-button">
+                        <span class="material-icons">search</span>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Painel de vídeos -->
+        <section id="videos-panel" role="tabpanel" aria-labelledby="videos-tab" class="tab-content active">
+            <h2>Vídeos Recentes</h2>
+            
+            <div class="videos-grid">
+                <!-- Primeiro vídeo -->
+                <article class="video-item">
+                    <figure class="video-thumbnail">
+                        <img src="https://placehold.co/320x180/" alt="Aula 1 | HTML5 Semântico">
+                        <time datetime="PT15M30S" class="duration">15:30</time>
+                    </figure>
+                    <div class="video-details">
+                        <h3>Aula 1 | HTML5 Semântico</h3>
+                        <p class="video-stats">
+                            <data value="8420">8,4 mil visualizações</data> • 
+                            <time datetime="2024-11-15">há 2 semanas</time>
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Segundo vídeo -->
+                <article class="video-item">
+                    <figure class="video-thumbnail">
+                        <img src="https://placehold.co/320x180/" alt="CSS Grid Layout Responsivo">
+                        <time datetime="PT22M45S" class="duration">22:45</time>
+                    </figure>
+                    <div class="video-details">
+                        <h3>CSS: Layout Responsivo na Prática</h3>
+                        <p class="video-stats">
+                            <data value="12300">12,3 mil visualizações</data> • 
+                            <time datetime="2024-11-08">há 3 semanas</time>
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Painel de estatísticas -->
+        <section id="stats-panel" role="tabpanel" aria-labelledby="stats-tab" class="tab-content">
+            <h2>Estatísticas do Canal</h2>
+            
+            <!-- Tabela de estatísticas mensais -->
+            <table class="stats-table">
+                <caption>Performance do canal nos últimos 6 meses</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Mês</th>
+                        <th scope="col">Visualizações</th>
+                        <th scope="col">Inscritos</th>
+                        <th scope="col">Tempo Assistido</th>
+                        <th scope="col">Crescimento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Novembro</td>
+                        <td><data value="45200">45,2 mil</data></td>
+                        <td><data value="1240">+1.240</data></td>
+                        <td><data value="892">892 horas</data></td>
+                        <td class="positive"><mark>+18%</mark></td>
+                    </tr>
+                    <tr>
+                        <td>Outubro</td>
+                        <td><data value="38100">38,1 mil</data></td>
+                        <td><data value="980">+980</data></td>
+                        <td><data value="756">756 horas</data></td>
+                        <td class="positive"><mark>+12%</mark></td>
+                    </tr>
+                    <tr>
+                        <td>Setembro</td>
+                        <td><data value="34000">34,0 mil</data></td>
+                        <td><data value="820">+820</data></td>
+                        <td><data value="680">680 horas</data></td>
+                        <td class="neutral">+5%</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong><data value="117300">117,3 mil</data></strong></td>
+                        <td><strong><data value="3040">+3.040</data></strong></td>
+                        <td><strong><data value="2328">2.328 horas</data></strong></td>
+                        <td><strong>+12%</strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+</body>
+</html>

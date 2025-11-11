@@ -1,0 +1,316 @@
+/* CSS para página do canal  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    top: 0;
+    background: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-toggle, .notifications-btn, .profile-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.logo img {
+    height: 20px;
+}
+
+search {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    max-width: 600px;
+    margin: 0 40px;
+}
+
+search form {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    overflow: hidden;
+    flex: 1;
+}
+
+search input {
+    border: none;
+    padding: 6px 16px;
+    flex: 1;
+    outline: none;
+}
+
+search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+search form button{
+    border-left: 1px solid #ccc;
+}
+
+#mic {
+    border: none;
+    border-radius: 50%;
+    padding: 6px;
+    cursor: pointer;
+}
+
+#account {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.create-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    border: 0;
+    padding: 6px 14px;
+    cursor: pointer;
+}
+
+.profile-btn img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* Banner do canal */
+.channel-banner {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.channel-banner figure {
+    margin: 0;
+    height: 100%;
+}
+
+.channel-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cabeçalho do canal */
+.channel-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.channel-avatar {
+    margin: 0;
+}
+
+.channel-avatar img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+}
+
+.channel-info {
+    flex: 1;
+}
+
+.channel-info h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    color: #0f0f0f;
+}
+
+.channel-handle {
+    font-style: normal;
+    color: #606060;
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+
+.subscriber-count {
+    color: #606060;
+    font-size: 14px;
+    margin: 0 0 12px 0;
+}
+
+.channel-description {
+    color: #0f0f0f;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    max-width: 600px;
+}
+
+details.channel-description {
+    position: relative;
+    bottom: 21px;
+}
+
+details.channel-description summary {
+    position: relative;
+    left: 240px;
+}
+
+.subscribe-btn {
+    background: #0f0f0f;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.subscribe-btn:hover {
+    background: #2a2a2a;
+}
+
+/* Navegação por abas */
+.channel-tabs {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 20px;
+}
+
+.channel-tabs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+
+.channel-tabs button {
+    background: none;
+    border: none;
+    padding: 16px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #606060;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.channel-tabs button[aria-selected="true"] {
+    color: #0f0f0f;
+    border-bottom-color: #0f0f0f;
+}
+
+.channel-tabs button:hover {
+    color: #0f0f0f;
+}
+
+#search-button span {
+    position: relative;
+    top: 3px;
+    font-size: 16px;
+}
+
+/* Conteúdo das abas */
+.tab-content {
+    display: none;
+    padding: 24px 20px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #0f0f0f;
+}
+
+/* Grade de vídeos */
+.videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.video-item {
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.video-item:hover {
+    background-color: #f2f2f2;
+}
+
+.video-item:hover .video-thumbnail img {
+    border-radius: 0;
+}
+
+.video-thumbnail {
+    position: relative;
+    margin: 0 0 8px 0;
+}
+
+.video-thumbnail img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.duration {
+    position: absolute;
+    bottom: 12px;
+    right: 8px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.video-details {
+    margin-left: 4px;
+}
+
+.video-details h3 {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+    color: #0f0f0f;
+    line-height: 1.3;
+}
+
+.video-stats {
+    font-size: 12px;
+    color: #606060;
+    margin: 0;
+}
