@@ -237,12 +237,12 @@ details.channel-description summary {
 
 /* Conteúdo das abas */
 .tab-content {
-    display: none;
     padding: 24px 20px;
 }
 
-.tab-content.active {
-    display: block;
+/* Layout principal com sidebar */
+main {
+    position: relative;
 }
 
 .tab-content h2 {
@@ -313,4 +313,290 @@ details.channel-description summary {
     font-size: 12px;
     color: #606060;
     margin: 0;
+}
+
+
+
+/* Dialog modal */
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0;
+    max-width: 400px;
+    width: 90%;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.3);
+}
+
+dialog header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f9f9f9;
+}
+
+dialog header h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #0f0f0f;
+}
+
+dialog header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+}
+
+dialog div {
+    padding: 16px;
+    line-height: 1.4;
+}
+
+dialog footer {
+    padding: 16px;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+    background: #f9f9f9;
+}
+
+dialog footer button {
+    background: #ccc;
+    color: #333;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Botão de informações */
+.info-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #0f0f0f;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.info-btn span {
+    position: relative;
+    top: 3px;
+}
+
+.info-btn:hover {
+    background: #bbb;
+}
+
+/* Footer */
+.site-footer {
+    background: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-size: 14px;
+    margin: 0 0 12px 0;
+    color: #333;
+}
+
+.footer-section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 6px;
+}
+
+.footer-section a {
+    color: #666;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 16px;
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+}
+
+.footer-bottom address {
+    font-style: normal;
+    margin-top: 6px;
+}
+
+.footer-bottom a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Tabela de estatísticas */
+.stats-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.stats-table th,
+.stats-table td {
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.stats-table th {
+    background: #f5f5f5;
+}
+
+/* Seção de suporte */
+.support-container {
+    display: flex;
+    gap: 30px;
+    max-width: 900px;
+}
+
+.support-sidebar {
+    flex: 0 0 250px;
+    border: 1px solid #ccc;
+    padding: 16px;
+    background: #f9f9f9;
+}
+
+.support-sidebar h3 {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+    color: #0f0f0f;
+}
+
+.support-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.support-sidebar li {
+    margin-bottom: 8px;
+}
+
+.support-sidebar a {
+    text-decoration: none;
+    color: #065fd4;
+    font-size: 14px;
+    display: block;
+    padding: 6px 0;
+}
+
+.support-sidebar a:hover {
+    text-decoration: underline;
+}
+
+.support-form {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: white;
+}
+
+.support-form h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #0f0f0f;
+}
+
+.support-form p {
+    margin: 0 0 20px 0;
+    color: #606060;
+    font-size: 14px;
+}
+
+.support-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.support-form legend {
+    font-weight: 600;
+    color: #0f0f0f;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.support-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 16px 0 4px 0;
+    color: #0f0f0f;
+}
+
+.support-form input,
+.support-form textarea,
+.support-form select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.support-form input:focus,
+.support-form textarea:focus,
+.support-form select:focus {
+    outline: none;
+    border-color: #065fd4;
+}
+
+.support-form small {
+    font-size: 12px;
+    color: #606060;
+    margin-top: 4px;
+    display: block;
+}
+
+.support-form button {
+    background: #065fd4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.support-form button:hover {
+    background: #0b5394;
 }

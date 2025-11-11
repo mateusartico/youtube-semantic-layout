@@ -106,10 +106,10 @@
                     <button role="tab" aria-selected="true" aria-controls="videos-panel" id="videos-tab">Vídeos</button>
                 </li>
                 <li role="presentation">
-                    <button role="tab" aria-selected="false" aria-controls="about-panel" id="playlist-tab">Playlists</button>
+                    <button role="tab" aria-selected="false" aria-controls="playlist-panel" id="playlist-tab">Playlists</button>
                 </li>
                 <li role="presentation">
-                    <button role="tab" aria-selected="false" aria-controls="stats-panel" id="posts-tab">Posts</button>
+                    <button role="tab" aria-selected="false" aria-controls="posts-panel" id="posts-tab">Posts</button>
                 </li>
                 <li role="search">
                     <button aria-selected="false" aria-controls="search-area" id="search-button">
@@ -155,6 +155,7 @@
                 </article>
             </div>
         </section>
+        
 
         <!-- Painel de estatísticas -->
         <section id="stats-panel" role="tabpanel" aria-labelledby="stats-tab" class="tab-content">
@@ -162,7 +163,7 @@
             
             <!-- Tabela de estatísticas mensais -->
             <table class="stats-table">
-                <caption>Performance do canal nos últimos 6 meses</caption>
+                <caption style="margin-bottom: 15px;">Performance do canal nos últimos 3 meses</caption>
                 <thead>
                     <tr>
                         <th scope="col">Mês</th>
@@ -206,6 +207,133 @@
                 </tfoot>
             </table>
         </section>
+
+        <!-- Seção de contato -->
+        <section id="contact-panel" class="tab-content">
+            <h2>Suporte do YouTube</h2>
+            
+            <div class="support-container">
+                <!-- Elemento aside para conteúdo complementar, melhora estrutura semântica -->
+                <aside role="complementary" class="support-sidebar">
+                    <h3>Central de Ajuda</h3>
+                    <ul>
+                        <li><a href="#">Perguntas Frequentes</a></li>
+                        <li><a href="#">Políticas da Comunidade</a></li>
+                        <li><a href="#">Segurança e Privacidade</a></li>
+                        <li><a href="#">Monetização</a></li>
+                        <li><a href="#">Upload de Vídeos</a></li>
+                    </ul>
+                </aside>
+
+                <!-- Formulário de contato com fieldset e legend -->
+                <!-- Form com fieldset melhora acessibilidade agrupando campos relacionados -->
+                <div class="support-form">
+                    <h3>Fale Conosco</h3>
+                    <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte.</p>
+                    
+                    <form action="#" method="post">
+                        <!-- Fieldset agrupa campos relacionados para melhor acessibilidade -->
+                        <fieldset>
+                            <!-- Legend fornece descrição do grupo de campos para leitores de tela -->
+                            <legend>Formulário de Suporte</legend>
+                            
+                            <label for="issue-type">Tipo de Problema:</label>
+                            <select id="issue-type" name="issue-type" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="video">Problemas com vídeo</option>
+                                <option value="account">Problemas de conta</option>
+                                <option value="monetization">Monetização</option>
+                                <option value="copyright">Direitos autorais</option>
+                                <option value="other">Outros</option>
+                            </select>
+                            
+                            <label for="name">Nome Completo:</label>
+                            <input type="text" id="name" name="name" required aria-describedby="name-help">
+                            <small id="name-help">Digite seu nome completo</small>
+                            
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required aria-describedby="email-help">
+                            <small id="email-help">E-mail associado à sua conta do YouTube</small>
+                            
+                            <label for="message">Descrição do Problema:</label>
+                            <textarea id="message" name="message" rows="5" required aria-describedby="message-help"></textarea>
+                            <small id="message-help">Descreva detalhadamente o problema que está enfrentando</small>
+                            
+                            <button type="submit">Enviar Solicitação</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dialog modal para informações adicionais -->
+        <!-- Dialog fornece semântica adequada para conteúdo modal -->
+        <dialog id="channel-info-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+            <header>
+                <h2 id="modal-title">Sobre o Canal</h2>
+                <button type="button" onclick="document.getElementById('channel-info-modal').close()" aria-label="Fechar modal">
+                    ✕
+                </button>
+            </header>
+            <div id="modal-description">
+                <p>Este canal é dedicado ao ensino de <strong>desenvolvimento web</strong> com foco em <em>HTML semântico</em> e acessibilidade.</p>
+                <p>Aqui você encontrará tutoriais práticos sobre:</p>
+                <ul>
+                    <li>HTML5 e suas tags semânticas</li>
+                    <li>CSS moderno e responsivo</li>
+                    <li>JavaScript para iniciantes</li>
+                    <li>Boas práticas de acessibilidade</li>
+                </ul>
+                <p><mark>Novo conteúdo toda semana!</mark></p>
+            </div>
+            <footer>
+                <button type="button" onclick="document.getElementById('channel-info-modal').close()">Fechar</button>
+            </footer>
+        </dialog>
+
+        <!-- Botão para abrir o modal -->
+        <button onclick="document.getElementById('channel-info-modal').showModal()" class="info-btn">
+            <span class="material-icons">info</span>
+        </button>
+
+    </main>
+
+    <!-- Footer com informações do site -->
+    <!-- Elemento footer define rodapé da página, melhora estrutura semântica -->
+    <footer role="contentinfo" class="site-footer">
+        <section class="footer-content">
+            <div class="footer-section">
+                <h3>YouTube</h3>
+                <nav aria-label="Links do rodapé">
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                        <li><a href="#">Direitos autorais</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Políticas</h3>
+                <nav aria-label="Políticas e termos">
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Termos</a></li>
+                        <li><a href="#">Segurança</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        
+        <div class="footer-bottom">
+            <p>&copy; <time datetime="2025">2025</time> Youtube Teste Educacional</p>
+            <!-- Address para informações de contato do desenvolvedor -->
+            <address>
+                Desenvolvido por <strong>Mateus Artico</strong> - 
+                <a href="mailto:coelhomat5@gmail.com">coelhomat5@gmail.com</a>
+            </address>
+        </div>
+    </footer>
 
 </body>
 </html>
