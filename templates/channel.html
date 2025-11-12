@@ -266,35 +266,31 @@
             </div>
         </section>
 
-        <!-- Dialog modal para informações adicionais -->
-        <!-- Dialog fornece semântica adequada para conteúdo modal -->
-        <dialog id="channel-info-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
-            <header>
-                <h2 id="modal-title">Sobre o Canal</h2>
-                <button type="button" onclick="document.getElementById('channel-info-modal').close()" aria-label="Fechar modal">
-                    ✕
-                </button>
-            </header>
-            <div id="modal-description">
-                <p>Este canal é dedicado ao ensino de <strong>desenvolvimento web</strong> com foco em <em>HTML semântico</em> e acessibilidade.</p>
-                <p>Aqui você encontrará tutoriais práticos sobre:</p>
-                <ul>
-                    <li>HTML5 e suas tags semânticas</li>
-                    <li>CSS moderno e responsivo</li>
-                    <li>JavaScript para iniciantes</li>
-                    <li>Boas práticas de acessibilidade</li>
-                </ul>
-                <p><mark>Novo conteúdo toda semana!</mark></p>
-            </div>
-            <footer>
-                <button type="button" onclick="document.getElementById('channel-info-modal').close()">Fechar</button>
-            </footer>
-        </dialog>
-
         <!-- Botão para abrir o modal -->
-        <button onclick="document.getElementById('channel-info-modal').showModal()" class="info-btn">
-            <span class="material-icons">info</span>
-        </button>
+        <div class="info-btn">
+            <input type="checkbox" name="show-info" id="show-info">
+            <!-- Dialog modal para informações adicionais -->
+            <!-- Dialog fornece semântica adequada para conteúdo modal -->
+            <dialog id="channel-info-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+                <header>
+                    <h2 id="modal-title">Sobre o Canal</h2>
+                </header>
+                <div id="modal-description">
+                    <p>Este canal é dedicado ao ensino de <strong>desenvolvimento web</strong> com foco em <em>HTML semântico</em> e acessibilidade.</p>
+                    <p>Aqui você encontrará tutoriais práticos sobre:</p>
+                    <ul>
+                        <li>HTML5 e suas tags semânticas</li>
+                        <li>CSS moderno e responsivo</li>
+                        <li>JavaScript para iniciantes</li>
+                        <li>Boas práticas de acessibilidade</li>
+                    </ul>
+                    <p><mark>Novo conteúdo toda semana!</mark></p>
+                </div>
+            </dialog>
+            <label for="show-info">
+                <span class="material-icons">info</span>
+            </label>
+        </div>
 
     </main>
 
