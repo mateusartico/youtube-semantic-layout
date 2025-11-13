@@ -5,17 +5,12 @@
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     top: 0;
     background: white;
 }
 
 header nav {
-    display: flex;
-    align-items: center;
     gap: 20px;
 }
 
@@ -32,33 +27,25 @@ header nav {
 }
 
 search {
-    display: flex;
-    align-items: center;
     gap: 15px;
-    flex: 1;
     max-width: 600px;
     margin: 0 40px;
 }
 
 search form {
-    display: flex;
     border: 1px solid #ccc;
     border-radius: 50px;
     overflow: hidden;
-    flex: 1;
 }
 
 search input {
     border: none;
     padding: 6px 16px;
-    flex: 1;
     outline: none;
+    width: 400px;
 }
 
 search button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: none;
     padding: 0 20px;
     cursor: pointer;
@@ -76,23 +63,21 @@ search form button{
 }
 
 #account {
-    display: flex;
-    align-items: center;
     gap: 16px;
 }
 
 #account ul {
-    display: flex;
-    align-items: center;
     gap: 16px;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
+#account li {
+    display: inline;
+}
+
 .create-btn {
-    display: flex;
-    align-items: center;
     border-radius: 50px;
     border: 0;
     padding: 6px 14px;
@@ -126,8 +111,6 @@ search form button{
 
 /* Cabeçalho do canal */
 .channel-header {
-    display: flex;
-    align-items: center;
     gap: 20px;
     padding: 20px;
     border-bottom: 1px solid #e0e0e0;
@@ -145,7 +128,7 @@ search form button{
 }
 
 .channel-info {
-    flex: 1;
+    
 }
 
 .channel-info h1 {
@@ -211,8 +194,11 @@ details.channel-description summary {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
     gap: 32px;
+}
+
+.channel-tabs li {
+    display: inline;
 }
 
 .channel-tabs button {
@@ -261,8 +247,6 @@ main {
 
 /* Grade de vídeos */
 .videos-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 16px;
     list-style: none;
     margin: 0;
@@ -424,7 +408,6 @@ dialog div {
 }
 
 .footer-content {
-    display: flex;
     gap: 40px;
     max-width: 800px;
     margin: 0 auto;
@@ -499,16 +482,16 @@ dialog div {
 
 /* Seção de suporte */
 .support-container {
-    display: flex;
     gap: 30px;
     max-width: 900px;
 }
 
 .support-sidebar {
-    flex: 0 0 250px;
+    width: 250px;
     border: 1px solid #ccc;
     padding: 16px;
     background: #f9f9f9;
+    float: left;
 }
 
 .support-sidebar h3 {
@@ -540,10 +523,10 @@ dialog div {
 }
 
 .support-form {
-    flex: 1;
     border: 1px solid #ccc;
     padding: 20px;
     background: white;
+    margin-left: 280px;
 }
 
 .support-form h3 {
