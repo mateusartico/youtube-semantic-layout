@@ -1,87 +1,67 @@
-<!-- Declaração DOCTYPE define este como documento HTML5 para renderização adequada do navegador -->
 <!DOCTYPE html>
-<!-- Elemento html com atributo lang melhora acessibilidade para leitores de tela e SEO -->
 <html lang="pt-br">
 
 <head>
-    <!-- Codificação de caracteres garante exibição adequada de caracteres especiais -->
     <meta charset="UTF-8">
-    <!-- Meta tag viewport habilita design responsivo para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tag author fornece valor SEO e atribuição de conteúdo -->
     <meta name="author" content="Mateus Artico">
-    <!-- Meta tag description é crucial para SEO e snippets de mecanismos de busca -->
     <meta name="description"
         content="Um projeto simples de clone do YouTube construído com HTML5 e CSS3 semânticos para praticar desenvolvimento web semântico.">
-    <!-- Tag title é essencial para SEO e identificação da aba do navegador -->
     <title>YouTube</title>
 
-    <!-- Folha de estilo externa para apresentação visual -->
     <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- Google Fonts para Material Icons e tipografia -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Elemento header define a seção superior contendo navegação e marca do site -->
-    <!-- Melhora acessibilidade fornecendo marco de navegação para leitores de tela -->
     <header role="banner">
-        <!-- Elemento de navegação para controles do menu principal, aprimora estrutura semântica -->
         <nav id="menu" aria-label="Menu principal">
-            <!-- Botão com aria-label fornece descrição acessível para leitores de tela -->
             <button class="menu-toggle" aria-label="Alternar menu de navegação">
                 <span class="material-icons" aria-hidden="true">menu</span>
             </button>
-            <!-- Link do logo com texto alt descritivo para reconhecimento da marca e SEO -->
             <a href="#" class="logo" aria-label="Página inicial do YouTube">
                 <img src="https://placehold.co/93x20/" alt="Logo do YouTube">
             </a>
         </nav>
-        <!-- Elemento search fornece significado semântico para funcionalidade de busca -->
         <search role="search">
-            <!-- Formulário com role="search" aprimora acessibilidade para funcionalidade de busca -->
             <form action="" method="get" role="search">
-                <!-- Input de busca com rotulagem adequada para acessibilidade -->
                 <input type="search" placeholder="Pesquisar" aria-label="Pesquisar vídeos">
-                <!-- Botão de envio com aria-label claro para usuários de leitores de tela -->
                 <button type="submit" aria-label="Enviar pesquisa">
                     <span class="material-icons" aria-hidden="true">search</span>
                 </button>
             </form>
-            <!-- Botão de busca por voz com rótulo descritivo -->
             <button id="mic" aria-label="Busca por voz">
                 <span class="material-icons" aria-hidden="true">mic</span>
             </button>
         </search>
-        <!-- Seção de navegação da conta para ações relacionadas ao usuário -->
         <nav id="account" aria-label="Ações da conta">
-            <!-- Botão criar com texto visível, não precisa de aria-label adicional -->
-            <button class="create-btn" aria-label="Criar novo conteúdo">
-                <span class="material-icons" aria-hidden="true">add</span>
-                <span>Criar</span>
-            </button>
-            <!-- Botão de notificações com rótulo descritivo -->
-            <button class="notifications-btn" aria-label="Ver notificações">
-                <span class="material-icons" aria-hidden="true">notifications</span>
-            </button>
-            <!-- Botão de perfil com descrição acessível -->
-            <a href="templates/channel.html">
-                <button class="profile-btn" aria-label="Abrir menu da conta">
-                    <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
-                </button>
-            </a>
+            <ul>
+                <li>
+                    <button class="create-btn" aria-label="Criar novo conteúdo">
+                        <span class="material-icons" aria-hidden="true">add</span>
+                        <span>Criar</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="notifications-btn" aria-label="Ver notificações">
+                        <span class="material-icons" aria-hidden="true">notifications</span>
+                    </button>
+                </li>
+                <li>
+                    <a href="templates/channel.html">
+                        <button class="profile-btn" aria-label="Abrir menu da conta">
+                            <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
+                        </button>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Elemento main contém o conteúdo primário, essencial para marcos de acessibilidade -->
     <main role="main">
-        <!-- Elemento aside para conteúdo da barra lateral, fornece significado semântico para conteúdo suplementar -->
-        <!-- Melhora acessibilidade separando claramente conteúdo principal da navegação -->
         <aside class="sidebar" role="complementary" aria-label="Navegação da barra lateral">
-            <!-- Navegação para seções primárias do site com aria-label descritivo -->
             <nav aria-label="Navegação primária">
                 <ul role="list">
                     <li><a href="#" class="active" aria-current="page"><span class="material-icons"
@@ -92,11 +72,8 @@
                     </li>
                 </ul>
             </nav>
-            <!-- Linha horizontal fornece separação visual -->
             <hr aria-hidden="true">
-            <!-- Seção de navegação pessoal com estrutura de cabeçalho semântica -->
             <nav aria-label="Navegação da biblioteca pessoal">
-                <!-- H2 mantém hierarquia adequada de cabeçalhos para acessibilidade -->
                 <h2>Você <span class="material-icons" aria-hidden="true">arrow_forward_ios</span></h2>
                 <ul role="list">
                     <li><a href="#"><span class="material-icons" aria-hidden="true">history</span>Histórico</a></li>
@@ -109,13 +86,9 @@
                 </ul>
             </nav>
         </aside>
-        <!-- Elemento section agrupa conteúdo relacionado, melhora estrutura do documento para SEO -->
         <section class="content">
-            <!-- Seção de filtros permite categorização de conteúdo, aprimora experiência do usuário -->
             <section class="filters">
-                <!-- Navegação para filtros de conteúdo com rotulagem clara para acessibilidade -->
                 <nav aria-label="Filtros de categoria de conteúdo">
-                    <!-- Botões de filtro com indicação adequada de estado ativo -->
                     <button class="filter-btn active" aria-pressed="true"
                         aria-label="Mostrar todos os vídeos">Tudo</button>
                     <button class="filter-btn" aria-pressed="false">Música</button>
@@ -129,38 +102,26 @@
                 </nav>
             </section>
 
-            <!-- Seção de grade de vídeos contém o conteúdo principal de vídeos -->
             <section class="video-grid" aria-label="Conteúdo de vídeos">
-                <!-- Seção de publicidade claramente marcada para transparência e acessibilidade -->
                 <section class="propaganda" aria-label="Conteúdo patrocinado">
-                    <!-- Elemento article representa peça de conteúdo independente, melhora estrutura SEO -->
                     <article class="video-card" role="article">
-                        <!-- Header contém a miniatura do vídeo e elementos visuais primários -->
                         <header>
-                            <!-- Elemento figure agrupa imagem com sua legenda, aprimora significado semântico -->
                             <figure class="thumbnail">
-                                <!-- Imagem com texto alt descritivo para acessibilidade e SEO -->
                                 <img src="assets/img/imagem_azul.png"
                                     alt="Imagem promocional da Azul Linhas Aéreas mostrando destinos brasileiros">
-                                <!-- Botão com rótulo acessível para indicação de link externo -->
                                 <button aria-label="Abrir conteúdo patrocinado em nova aba">
                                     <span class="material-icons" aria-hidden="true">arrow_outward</span>
                                 </button>
                             </figure>
                         </header>
-                        <!-- Footer contém metadados e informações do canal -->
                         <footer class="video-info">
-                            <!-- Figure para avatar do canal com agrupamento semântico -->
                             <figure class="channel-avatar">
                                 <img src="https://placehold.co/36x36/" alt="Avatar do canal Azul Linhas Aéreas"
                                     class="avatar">
                             </figure>
                             <section class="details">
-                                <!-- H3 mantém hierarquia de cabeçalhos para estrutura de conteúdo -->
                                 <h3>Descubra novos destinos no Brasil e leve memórias com a Azul, em até 24x</h3>
-                                <!-- Elemento address indica informações do publicador, melhora atribuição de conteúdo -->
                                 <address class="channel">
-                                    <!-- Elemento strong enfatiza natureza patrocinada para transparência -->
                                     <p><strong>Patrocinado</strong> • <em>Azul Linhas Aéreas Brasileiras</em></p>
                                 </address>
                             </section>
@@ -168,47 +129,35 @@
                     </article>
                 </section>
 
-                <!-- Artigo de vídeo regular com estrutura semântica completa -->
                 <article class="video-card" role="article">
                     <header>
-                        <!-- Figure com miniatura e informações de duração -->
                         <figure class="thumbnail">
-                            <!-- Texto alt descritivo ajuda com acessibilidade e compreensão do conteúdo -->
                             <img src="https://placehold.co/320x180/"
                                 alt="Miniatura do vídeo: Como Crescer Mais Alto Explicado pelo Monke">
-                            <!-- Elemento time com atributo datetime fornece duração legível por máquina para SEO -->
                             <time datetime="PT2M51S" class="duration"
                                 aria-label="Duração do vídeo: 2 minutos e 51 segundos">2:51</time>
                         </figure>
                     </header>
                     <footer class="video-info">
-                        <!-- Figure do avatar do canal para identificação visual -->
                         <figure class="channel-avatar">
                             <img src="https://placehold.co/36x36/" alt="Foto do perfil do canal Monke" class="avatar">
                         </figure>
                         <section class="details">
-                            <!-- H3 fornece hierarquia adequada de cabeçalhos para estrutura de conteúdo -->
                             <h3>Como Crescer Mais Alto Explicado pelo Monke</h3>
-                            <!-- Elemento address indica criador de conteúdo para atribuição adequada -->
                             <address class="channel">monke</address>
                             <p class="metadata">
-                                <!-- Elemento data com atributo value fornece contagem de visualizações legível por máquina -->
                                 <data value="366000" aria-label="366 mil visualizações">366 mil visualizações</data> •
-                                <!-- Elemento time com datetime para data de publicação, melhora SEO -->
                                 <time datetime="2024-10-07" aria-label="Publicado há 1 mês">Há 1 mês</time>
                             </p>
                         </section>
                     </footer>
                 </article>
 
-                <!-- Terceiro artigo de vídeo demonstrando estrutura semântica consistente -->
                 <article class="video-card" role="article">
                     <header>
                         <figure class="thumbnail">
-                            <!-- Texto alt específico descrevendo o conteúdo do tutorial -->
                             <img src="https://placehold.co/320x180/"
                                 alt="Miniatura do vídeo: Tutorial de entalhe em madeira mostrando processo de esculpir pato">
-                            <!-- Duração com formato datetime adequado e rótulo de acessibilidade -->
                             <time datetime="PT10M30S" class="duration"
                                 aria-label="Duração do vídeo: 10 minutos e 30 segundos">10:30</time>
                         </figure>
@@ -219,14 +168,10 @@
                                 class="avatar">
                         </figure>
                         <section class="details">
-                            <!-- Cabeçalho descritivo para conteúdo de tutorial -->
                             <h3>Entalhe um Pato Simples 1x1 | Tutorial Passo a Passo para Iniciantes</h3>
-                            <!-- Atribuição do canal usando elemento address -->
                             <address class="channel">The Maker Experience</address>
                             <p class="metadata">
-                                <!-- Contagem de visualizações com valor legível por máquina -->
                                 <data value="12000" aria-label="12 mil visualizações">12 mil visualizações</data> •
-                                <!-- Data de publicação com formato datetime adequado -->
                                 <time datetime="2024-10-24" aria-label="Publicado há 2 semanas">Há 2 semanas</time>
                             </p>
                         </section>
@@ -235,23 +180,15 @@
 
             </section>
 
-            <!-- Seção Shorts para conteúdo de vídeos curtos -->
             <section class="shorts-section" aria-labelledby="shorts-heading">
-                <!-- H2 fornece hierarquia adequada de cabeçalhos e identificação da seção -->
                 <h2 id="shorts-heading">Shorts</h2>
                 <div class="shorts-container" role="list">
-                    <!-- Elemento figure agrupa vídeo curto com sua legenda para significado semântico -->
                     <figure class="short-item" role="listitem">
-                        <!-- Texto alt descritivo para conteúdo de vídeo curto -->
                         <img src="https://placehold.co/265x400/"
                             alt="Vídeo curto: Conteúdo de comparação estética de academia">
-                        <!-- Figcaption fornece descrição acessível do conteúdo da figura -->
                         <figcaption>
-                            <!-- H3 mantém hierarquia de cabeçalhos dentro do item curto -->
                             <h3>Qual é o mais estético?</h3>
-                            <!-- Hashtags marcadas para categorização de conteúdo -->
                             <p><mark>#academia</mark> <mark>#estetica</mark></p>
-                            <!-- Contagem de visualizações com valor legível por máquina para SEO -->
                             <data value="1800000" aria-label="1,8 milhão de visualizações">1,8 mi de
                                 visualizações</data>
                         </figcaption>

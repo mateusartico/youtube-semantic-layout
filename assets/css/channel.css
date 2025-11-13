@@ -1,5 +1,3 @@
-/* CSS para página do canal  */
-
 * {
     margin: 0;
     padding: 0;
@@ -81,6 +79,15 @@ search form button{
     display: flex;
     align-items: center;
     gap: 16px;
+}
+
+#account ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .create-btn {

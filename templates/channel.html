@@ -1,30 +1,19 @@
-<!-- Declaração DOCTYPE define este como documento HTML5 para renderização adequada do navegador -->
 <!DOCTYPE html>
-<!-- Elemento html com atributo lang melhora acessibilidade para leitores de tela e SEO -->
 <html lang="pt-br">
 
 <head>
-    <!-- Codificação de caracteres garante exibição adequada de caracteres especiais -->
     <meta charset="UTF-8">
-    <!-- Meta tag viewport habilita design responsivo para dispositivos móveis -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta tag author fornece valor SEO e atribuição de conteúdo -->
     <meta name="author" content="Mateus Artico">
-    <!-- Meta tag description é crucial para SEO e snippets de mecanismos de busca -->
     <meta name="description" content="Canal do Mateus Artico - Estatísticas, informações e conteúdo sobre desenvolvimento web e tecnologia.">
-    <!-- Tag title é essencial para SEO e identificação da aba do navegador -->
     <title>Youtube - @mateusartico</title>
 
-    <!-- Folhas de estilo para apresentação visual -->
     <link rel="stylesheet" href="../assets/css/channel.css">
-
-    <!-- Google Fonts para Material Icons e tipografia -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header reutilizado para consistência -->
     <header role="banner">
         <nav id="menu" aria-label="Menu principal">
             <button class="menu-toggle" aria-label="Alternar menu de navegação">
@@ -46,40 +35,42 @@
             </button>
         </search>
         <nav id="account" aria-label="Ações da conta">
-            <button class="create-btn" aria-label="Criar novo conteúdo">
-                <span class="material-icons" aria-hidden="true">add</span>
-                <span>Criar</span>
-            </button>
-            <button class="notifications-btn" aria-label="Ver notificações">
-                <span class="material-icons" aria-hidden="true">notifications</span>
-            </button>
-            <button class="profile-btn" aria-label="Abrir menu da conta">
-                <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
-            </button>
+            <ul>
+                <li>
+                    <button class="create-btn" aria-label="Criar novo conteúdo">
+                        <span class="material-icons" aria-hidden="true">add</span>
+                        <span>Criar</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="notifications-btn" aria-label="Ver notificações">
+                        <span class="material-icons" aria-hidden="true">notifications</span>
+                    </button>
+                </li>
+                <li>
+                    <button class="profile-btn" aria-label="Abrir menu da conta">
+                        <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
+                    </button>
+                </li>
+            </ul>
         </nav>
     </header>
 
-    <!-- Elemento main contém o conteúdo primário da página do canal -->
     <main role="main">
-        <!-- Banner do canal -->
         <section class="channel-banner">
-            <!-- Figure agrupa imagem de banner com sua descrição -->
             <figure>
                 <img src="https://placehold.co/1200x300/4285f4/ffffff?text=Mateus+Artico%0AChannel+Testeeee" alt="Banner do canal Mateus Artico">
                 <figcaption class="sr-only">Banner promocional do canal com logo e branding</figcaption>
             </figure>
         </section>
 
-        <!-- Informações principais do canal -->
         <section class="channel-header">
             <figure class="channel-avatar">
                 <img src="https://placehold.co/120x120/" alt="Avatar do canal Mateus Artico">
             </figure>
             
             <div class="channel-info">
-                <!-- H1 como título principal da página -->
                 <h1>Mateus Artico</h1>
-                <!-- Address para informações de contato do criador -->
                 <address class="channel-handle"><strong>@mateusartico</strong></address>
                 <p class="subscriber-count">
                     <data value="15420" aria-label="15 mil e 420 inscritos">15,4 mil inscritos</data> • 
@@ -99,7 +90,6 @@
             </div>
         </section>
 
-        <!-- Navegação das abas do canal -->
         <nav class="channel-tabs" aria-label="Navegação do canal">
             <ul role="tablist">
                 <li role="presentation">
@@ -119,12 +109,10 @@
             </ul>
         </nav>
 
-        <!-- Painel de vídeos -->
         <section id="videos-panel" role="tabpanel" aria-labelledby="videos-tab" class="tab-content active">
             <h2>Vídeos Recentes</h2>
             
             <div class="videos-grid">
-                <!-- Primeiro vídeo -->
                 <article class="video-item">
                     <figure class="video-thumbnail">
                         <img src="https://placehold.co/320x180/" alt="Aula 1 | HTML5 Semântico">
@@ -139,7 +127,6 @@
                     </div>
                 </article>
 
-                <!-- Segundo vídeo -->
                 <article class="video-item">
                     <figure class="video-thumbnail">
                         <img src="https://placehold.co/320x180/" alt="CSS Grid Layout Responsivo">
@@ -157,11 +144,9 @@
         </section>
         
 
-        <!-- Painel de estatísticas -->
         <section id="stats-panel" role="tabpanel" aria-labelledby="stats-tab" class="tab-content">
             <h2>Estatísticas do Canal</h2>
             
-            <!-- Tabela de estatísticas mensais -->
             <table class="stats-table">
                 <caption style="margin-bottom: 15px;">Performance do canal nos últimos 3 meses</caption>
                 <thead>
@@ -208,12 +193,10 @@
             </table>
         </section>
 
-        <!-- Seção de contato -->
         <section id="contact-panel" class="tab-content">
             <h2>Suporte do YouTube</h2>
             
             <div class="support-container">
-                <!-- Elemento aside para conteúdo complementar, melhora estrutura semântica -->
                 <aside role="complementary" class="support-sidebar">
                     <h3>Central de Ajuda</h3>
                     <ul>
@@ -225,16 +208,12 @@
                     </ul>
                 </aside>
 
-                <!-- Formulário de contato com fieldset e legend -->
-                <!-- Form com fieldset melhora acessibilidade agrupando campos relacionados -->
                 <div class="support-form">
                     <h3>Fale Conosco</h3>
                     <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte.</p>
                     
                     <form action="#" method="post">
-                        <!-- Fieldset agrupa campos relacionados para melhor acessibilidade -->
                         <fieldset>
-                            <!-- Legend fornece descrição do grupo de campos para leitores de tela -->
                             <legend>Formulário de Suporte</legend>
                             
                             <label for="issue-type">Tipo de Problema:</label>
@@ -266,11 +245,8 @@
             </div>
         </section>
 
-        <!-- Botão para abrir o modal -->
         <div class="info-btn">
             <input type="checkbox" name="show-info" id="show-info">
-            <!-- Dialog modal para informações adicionais -->
-            <!-- Dialog fornece semântica adequada para conteúdo modal -->
             <dialog id="channel-info-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
                 <header>
                     <h2 id="modal-title">Sobre o Canal</h2>
@@ -294,8 +270,6 @@
 
     </main>
 
-    <!-- Footer com informações do site -->
-    <!-- Elemento footer define rodapé da página, melhora estrutura semântica -->
     <footer role="contentinfo" class="site-footer">
         <section class="footer-content">
             <div class="footer-section">
@@ -323,7 +297,6 @@
         
         <div class="footer-bottom">
             <p>&copy; <time datetime="2025">2025</time> Youtube Teste Educacional</p>
-            <!-- Address para informações de contato do desenvolvedor -->
             <address>
                 Desenvolvido por <strong>Mateus Artico</strong> - 
                 <a href="mailto:coelhomat5@gmail.com">coelhomat5@gmail.com</a>
