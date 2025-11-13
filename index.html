@@ -17,41 +17,41 @@
 <body>
 
     <header role="banner">
-        <nav id="menu" aria-label="Menu principal">
-            <button class="menu-toggle" aria-label="Alternar menu de navegação">
-                <span class="material-icons" aria-hidden="true">menu</span>
+        <nav id="menu">
+            <button class="menu-toggle">
+                <span class="material-icons">menu</span>
             </button>
-            <a href="#" class="logo" aria-label="Página inicial do YouTube">
+            <a href="#" class="logo">
                 <img src="https://placehold.co/93x20/" alt="Logo do YouTube">
             </a>
         </nav>
-        <search role="search">
-            <form action="" method="get" role="search">
-                <input type="search" placeholder="Pesquisar" aria-label="Pesquisar vídeos">
-                <button type="submit" aria-label="Enviar pesquisa">
-                    <span class="material-icons" aria-hidden="true">search</span>
+        <search>
+            <form action="" method="get">
+                <input type="search" placeholder="Pesquisar">
+                <button type="submit">
+                    <span class="material-icons">search</span>
                 </button>
             </form>
-            <button id="mic" aria-label="Busca por voz">
-                <span class="material-icons" aria-hidden="true">mic</span>
+            <button id="mic">
+                <span class="material-icons">mic</span>
             </button>
         </search>
-        <nav id="account" aria-label="Ações da conta">
+        <nav id="account">
             <ul>
                 <li>
-                    <button class="create-btn" aria-label="Criar novo conteúdo">
-                        <span class="material-icons" aria-hidden="true">add</span>
+                    <button class="create-btn">
+                        <span class="material-icons">add</span>
                         <span>Criar</span>
                     </button>
                 </li>
                 <li>
-                    <button class="notifications-btn" aria-label="Ver notificações">
-                        <span class="material-icons" aria-hidden="true">notifications</span>
+                    <button class="notifications-btn">
+                        <span class="material-icons">notifications</span>
                     </button>
                 </li>
                 <li>
                     <a href="templates/channel.html">
-                        <button class="profile-btn" aria-label="Abrir menu da conta">
+                        <button class="profile-btn">
                             <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
                         </button>
                     </a>
@@ -60,58 +60,56 @@
         </nav>
     </header>
 
-    <main role="main">
-        <aside class="sidebar" role="complementary" aria-label="Navegação da barra lateral">
-            <nav aria-label="Navegação primária">
-                <ul role="list">
-                    <li><a href="#" class="active" aria-current="page"><span class="material-icons"
-                                aria-hidden="true">home</span>Início</a></li>
-                    <li><a href="#"><span class="material-icons"
-                                aria-hidden="true">local_fire_department</span>Shorts</a></li>
-                    <li><a href="#"><span class="material-icons" aria-hidden="true">subscriptions</span>Inscrições</a>
+    <main>
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#" class="active"><span class="material-icons">home</span>Início</a></li>
+                    <li><a href="#"><span class="material-icons">local_fire_department</span>Shorts</a></li>
+                    <li><a href="#"><span class="material-icons">subscriptions</span>Inscrições</a>
                     </li>
                 </ul>
             </nav>
-            <hr aria-hidden="true">
-            <nav aria-label="Navegação da biblioteca pessoal">
-                <h2>Você <span class="material-icons" aria-hidden="true">arrow_forward_ios</span></h2>
-                <ul role="list">
-                    <li><a href="#"><span class="material-icons" aria-hidden="true">history</span>Histórico</a></li>
-                    <li><a href="#"><span class="material-icons" aria-hidden="true">list</span>Playlists</a></li>
-                    <li><a href="#"><span class="material-icons" aria-hidden="true">school</span>Cursos</a></li>
-                    <li><a href="#"><span class="material-icons" aria-hidden="true">schedule</span>Assistir mais
+            <hr>
+            <nav>
+                <h2>Você <span class="material-icons">arrow_forward_ios</span></h2>
+                <ul>
+                    <li><a href="#"><span class="material-icons">history</span>Histórico</a></li>
+                    <li><a href="#"><span class="material-icons">list</span>Playlists</a></li>
+                    <li><a href="#"><span class="material-icons">school</span>Cursos</a></li>
+                    <li><a href="#"><span class="material-icons">schedule</span>Assistir mais
                             tarde</a></li>
-                    <li><a href="#"><span class="material-icons" aria-hidden="true">thumb_up</span>Vídeos curtidos</a>
+                    <li><a href="#"><span class="material-icons">thumb_up</span>Vídeos curtidos</a>
                     </li>
                 </ul>
             </nav>
         </aside>
         <section class="content">
             <section class="filters">
-                <nav aria-label="Filtros de categoria de conteúdo">
+                <nav>
                     <ul>
-                        <li><button class="filter-btn active" aria-pressed="true" aria-label="Mostrar todos os vídeos">Tudo</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Música</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Jogos</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Notícias</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Ao vivo</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Esportes</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Aprendizado</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Moda e beleza</button></li>
-                        <li><button class="filter-btn" aria-pressed="false">Podcasts</button></li>
+                        <li><button class="filter-btn active">Tudo</button></li>
+                        <li><button class="filter-btn">Música</button></li>
+                        <li><button class="filter-btn">Jogos</button></li>
+                        <li><button class="filter-btn">Notícias</button></li>
+                        <li><button class="filter-btn">Ao vivo</button></li>
+                        <li><button class="filter-btn">Esportes</button></li>
+                        <li><button class="filter-btn">Aprendizado</button></li>
+                        <li><button class="filter-btn">Moda e beleza</button></li>
+                        <li><button class="filter-btn">Podcasts</button></li>
                     </ul>
                 </nav>
             </section>
 
-            <section class="video-grid" aria-label="Conteúdo de vídeos">
-                <section class="propaganda" aria-label="Conteúdo patrocinado">
-                    <article class="video-card" role="article">
+            <section class="video-grid">
+                <section class="propaganda">
+                    <article class="video-card">
                         <header>
                             <figure class="thumbnail">
                                 <img src="assets/img/imagem_azul.png"
                                     alt="Imagem promocional da Azul Linhas Aéreas mostrando destinos brasileiros">
-                                <button aria-label="Abrir conteúdo patrocinado em nova aba">
-                                    <span class="material-icons" aria-hidden="true">arrow_outward</span>
+                                <button>
+                                    <span class="material-icons">arrow_outward</span>
                                 </button>
                             </figure>
                         </header>
@@ -130,13 +128,12 @@
                     </article>
                 </section>
 
-                <article class="video-card" role="article">
+                <article class="video-card">
                     <header>
                         <figure class="thumbnail">
                             <img src="https://placehold.co/320x180/"
                                 alt="Miniatura do vídeo: Como Crescer Mais Alto Explicado pelo Monke">
-                            <time datetime="PT2M51S" class="duration"
-                                aria-label="Duração do vídeo: 2 minutos e 51 segundos">2:51</time>
+                            <time datetime="PT2M51S" class="duration">2:51</time>
                         </figure>
                     </header>
                     <footer class="video-info">
@@ -147,20 +144,19 @@
                             <h3>Como Crescer Mais Alto Explicado pelo Monke</h3>
                             <address class="channel">monke</address>
                             <p class="metadata">
-                                <data value="366000" aria-label="366 mil visualizações">366 mil visualizações</data> •
-                                <time datetime="2024-10-07" aria-label="Publicado há 1 mês">Há 1 mês</time>
+                                <data value="366000">366 mil visualizações</data> •
+                                <time datetime="2024-10-07">Há 1 mês</time>
                             </p>
                         </section>
                     </footer>
                 </article>
 
-                <article class="video-card" role="article">
+                <article class="video-card">
                     <header>
                         <figure class="thumbnail">
                             <img src="https://placehold.co/320x180/"
                                 alt="Miniatura do vídeo: Tutorial de entalhe em madeira mostrando processo de esculpir pato">
-                            <time datetime="PT10M30S" class="duration"
-                                aria-label="Duração do vídeo: 10 minutos e 30 segundos">10:30</time>
+                            <time datetime="PT10M30S" class="duration">10:30</time>
                         </figure>
                     </header>
                     <footer class="video-info">
@@ -172,8 +168,8 @@
                             <h3>Entalhe um Pato Simples 1x1 | Tutorial Passo a Passo para Iniciantes</h3>
                             <address class="channel">The Maker Experience</address>
                             <p class="metadata">
-                                <data value="12000" aria-label="12 mil visualizações">12 mil visualizações</data> •
-                                <time datetime="2024-10-24" aria-label="Publicado há 2 semanas">Há 2 semanas</time>
+                                <data value="12000">12 mil visualizações</data> •
+                                <time datetime="2024-10-24">Há 2 semanas</time>
                             </p>
                         </section>
                     </footer>
@@ -181,8 +177,8 @@
 
             </section>
 
-            <section class="shorts-section" aria-labelledby="shorts-heading">
-                <h2 id="shorts-heading">Shorts</h2>
+            <section class="shorts-section">
+                <h2>Shorts</h2>
                 <ul class="shorts-container">
                     <li>
                         <figure class="short-item">
@@ -191,7 +187,7 @@
                             <figcaption>
                                 <h3>Qual é o mais estético?</h3>
                                 <p><mark>#academia</mark> <mark>#estetica</mark></p>
-                                <data value="1800000" aria-label="1,8 milhão de visualizações">1,8 mi de
+                                <data value="1800000">1,8 mi de
                                     visualizações</data>
                             </figcaption>
                         </figure>
