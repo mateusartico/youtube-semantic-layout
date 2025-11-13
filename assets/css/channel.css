@@ -1,13 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     font-family: "Poppins";
 }
 
 header {
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     top: 0;
-    background: white;
+    background-color: white;
 }
 
 header nav {
@@ -15,10 +24,16 @@ header nav {
 }
 
 .menu-toggle, .notifications-btn, .profile-btn {
-    background: none;
-    border: none;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     cursor: pointer;
-    padding: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
     border-radius: 50%;
 }
 
@@ -27,27 +42,44 @@ header nav {
 }
 
 search {
-    gap: 15px;
     max-width: 600px;
-    margin: 0 40px;
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-left: 40px;
 }
 
 search form {
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     border-radius: 50px;
     overflow: hidden;
 }
 
 search input {
-    border: none;
-    padding: 6px 16px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 6px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
     outline: none;
     width: 400px;
 }
 
 search button {
-    border: none;
-    padding: 0 20px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
     cursor: pointer;
 }
 
@@ -56,9 +88,15 @@ search form button{
 }
 
 #mic {
-    border: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     border-radius: 50%;
-    padding: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
     cursor: pointer;
 }
 
@@ -79,8 +117,14 @@ search form button{
 
 .create-btn {
     border-radius: 50px;
-    border: 0;
-    padding: 6px 14px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-left: 14px;
     cursor: pointer;
 }
 
@@ -95,11 +139,14 @@ search form button{
     width: 100%;
     height: 200px;
     overflow: hidden;
-    background: #f0f0f0;
+    background-color: #f0f0f0;
 }
 
 .channel-banner figure {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     height: 100%;
 }
 
@@ -111,20 +158,28 @@ search form button{
 
 /* Cabeçalho do canal */
 .channel-header {
-    gap: 20px;
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .channel-avatar {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .channel-avatar img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 2px solid #e0e0e0;
+    border-top: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    border-left: 2px solid #e0e0e0;
 }
 
 .channel-info {
@@ -134,7 +189,10 @@ search form button{
 .channel-info h1 {
     font-size: 24px;
     font-weight: 600;
-    margin: 0 0 4px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
     color: #0f0f0f;
 }
 
@@ -142,20 +200,29 @@ search form button{
     font-style: normal;
     color: #606060;
     font-size: 14px;
-    margin: 0 0 8px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
+    margin-left: 0;
 }
 
 .subscriber-count {
     color: #606060;
     font-size: 14px;
-    margin: 0 0 12px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
 }
 
 .channel-description {
     color: #0f0f0f;
     font-size: 14px;
     line-height: 1.4;
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     max-width: 600px;
 }
 
@@ -170,10 +237,16 @@ details.channel-description summary {
 }
 
 .subscribe-btn {
-    background: #0f0f0f;
+    background-color: #0f0f0f;
     color: white;
-    border: none;
-    padding: 8px 14px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 8px;
+    padding-right: 14px;
+    padding-bottom: 8px;
+    padding-left: 14px;
     border-radius: 50px;
     font-weight: bold;
     cursor: pointer;
@@ -181,20 +254,28 @@ details.channel-description summary {
 }
 
 .subscribe-btn:hover {
-    background: #2a2a2a;
+    background-color: #2a2a2a;
 }
 
 /* Navegação por abas */
 .channel-tabs {
     border-bottom: 1px solid #e0e0e0;
-    padding: 0 20px;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
 }
 
 .channel-tabs ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 32px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .channel-tabs li {
@@ -202,15 +283,21 @@ details.channel-description summary {
 }
 
 .channel-tabs button {
-    background: none;
-    border: none;
-    padding: 16px 0;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    padding-top: 16px;
+    padding-right: 0;
+    padding-bottom: 16px;
+    padding-left: 0;
     font-size: 14px;
     font-weight: 500;
     color: #606060;
     cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s;
+    transition-property: all;
+    transition-duration: 0.2s;
 }
 
 .channel-tabs button[aria-selected="true"] {
@@ -230,7 +317,10 @@ details.channel-description summary {
 
 /* Conteúdo das abas */
 .tab-content {
-    padding: 24px 20px;
+    padding-top: 24px;
+    padding-right: 20px;
+    padding-bottom: 24px;
+    padding-left: 20px;
 }
 
 /* Layout principal com sidebar */
@@ -241,23 +331,34 @@ main {
 .tab-content h2 {
     font-size: 20px;
     font-weight: 600;
-    margin: 0 0 20px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
     color: #0f0f0f;
 }
 
 /* Grade de vídeos */
 .videos-grid {
-    gap: 16px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .video-item {
     cursor: pointer;
     border-radius: 12px;
-    padding: 10px;
-    transition: 0.3s;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transition-duration: 0.3s;
 }
 
 .video-item:hover {
@@ -270,22 +371,28 @@ main {
 
 .video-thumbnail {
     position: relative;
-    margin: 0 0 8px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
+    margin-left: 0;
 }
 
 .video-thumbnail img {
     width: 100%;
     border-radius: 12px;
-    transition: 0.3s;
+    transition-duration: 0.3s;
 }
 
 .duration {
     position: absolute;
     bottom: 12px;
     right: 8px;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 2px 6px;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 500;
@@ -298,7 +405,10 @@ main {
 .video-details h3 {
     font-size: 14px;
     font-weight: 500;
-    margin: 0 0 4px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
     color: #0f0f0f;
     line-height: 1.3;
 }
@@ -306,7 +416,10 @@ main {
 .video-stats {
     font-size: 12px;
     color: #606060;
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 
@@ -319,43 +432,61 @@ dialog {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000;
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     border-radius: 8px;
-    padding: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     max-width: 30%;
-    background: white;
+    background-color: white;
 }
 
 dialog header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
     border-bottom: 1px solid #e0e0e0;
-    background: #f9f9f9;
+    background-color: #f9f9f9;
 }
 
 dialog header h2 {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     font-size: 16px;
     color: #0f0f0f;
 }
 
 dialog header button {
-    background: none;
-    border: none;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     cursor: pointer;
-    padding: 4px;
+    padding-top: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
     border-radius: 50%;
     color: #666;
 }
 
 dialog header button:hover {
-    background: #e0e0e0;
+    background-color: #e0e0e0;
 }
 
-dialog div {
-    padding: 16px 32px;
+dialog section {
+    padding-top: 16px;
+    padding-right: 32px;
+    padding-bottom: 16px;
+    padding-left: 32px;
     line-height: 1.4;
 }
 
@@ -377,11 +508,17 @@ dialog div {
 
 .info-btn label {
     display: block;
-    background: #0f0f0f;
+    background-color: #0f0f0f;
     color: white;
-    border: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     border-radius: 2px;
-    padding: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
     cursor: pointer;
 }
 
@@ -390,7 +527,7 @@ dialog div {
 }
 
 .info-btn label:hover {
-    background: #2a2a2a;
+    background-color: #2a2a2a;
 }
 
 
@@ -401,28 +538,42 @@ dialog div {
 
 /* Footer */
 .site-footer {
-    background: #f5f5f5;
+    background-color: #f5f5f5;
     border-top: 1px solid #ddd;
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     margin-top: 40px;
 }
 
 .footer-content {
-    gap: 40px;
     max-width: 800px;
-    margin: 0 auto;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
 }
 
 .footer-section h3 {
     font-size: 14px;
-    margin: 0 0 12px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
     color: #333;
 }
 
 .footer-section ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .footer-section li {
@@ -466,44 +617,67 @@ dialog div {
 .stats-table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
 }
 
 .stats-table th,
 .stats-table td {
-    border: 1px solid #ccc;
-    padding: 8px 12px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
     text-align: left;
 }
 
 .stats-table th {
-    background: #f5f5f5;
+    background-color: #f5f5f5;
 }
 
 /* Seção de suporte */
 .support-container {
-    gap: 30px;
     max-width: 900px;
 }
 
 .support-sidebar {
     width: 250px;
-    border: 1px solid #ccc;
-    padding: 16px;
-    background: #f9f9f9;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding-top: 16px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    background-color: #f9f9f9;
     float: left;
 }
 
 .support-sidebar h3 {
-    margin: 0 0 12px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
     font-size: 16px;
     color: #0f0f0f;
 }
 
 .support-sidebar ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .support-sidebar li {
@@ -515,7 +689,10 @@ dialog div {
     color: #065fd4;
     font-size: 14px;
     display: block;
-    padding: 6px 0;
+    padding-top: 6px;
+    padding-right: 0;
+    padding-bottom: 6px;
+    padding-left: 0;
 }
 
 .support-sidebar a:hover {
@@ -523,28 +700,49 @@ dialog div {
 }
 
 .support-form {
-    border: 1px solid #ccc;
-    padding: 20px;
-    background: white;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: white;
     margin-left: 280px;
 }
 
 .support-form h3 {
-    margin: 0 0 8px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 8px;
+    margin-left: 0;
     font-size: 18px;
     color: #0f0f0f;
 }
 
 .support-form p {
-    margin: 0 0 20px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 0;
     color: #606060;
     font-size: 14px;
 }
 
 .support-form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .support-form legend {
@@ -558,7 +756,10 @@ dialog div {
     display: block;
     font-size: 14px;
     font-weight: 500;
-    margin: 16px 0 4px 0;
+    margin-top: 16px;
+    margin-right: 0;
+    margin-bottom: 4px;
+    margin-left: 0;
     color: #0f0f0f;
 }
 
@@ -566,8 +767,14 @@ dialog div {
 .support-form textarea,
 .support-form select {
     width: 100%;
-    padding: 8px 12px;
-    border: 1px solid #ccc;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     font-size: 14px;
     font-family: inherit;
     box-sizing: border-box;
@@ -588,10 +795,16 @@ dialog div {
 }
 
 .support-form button {
-    background: #065fd4;
+    background-color: #065fd4;
     color: white;
-    border: none;
-    padding: 10px 20px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
@@ -599,5 +812,5 @@ dialog div {
 }
 
 .support-form button:hover {
-    background: #0b5394;
+    background-color: #0b5394;
 }
