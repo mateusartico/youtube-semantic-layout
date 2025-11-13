@@ -1,24 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     font-family: "Poppins";
 }
 
 header {
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
     top: 0;
-    background: white;
+    background-color: white;
 }
 
 header nav {
-    gap: 20px;
+    
 }
 
 .menu-toggle, .notifications-btn, .profile-btn {
-    background: none;
-    border: none;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     cursor: pointer;
-    padding: 8px;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
     border-radius: 50%;
 }
 
@@ -27,27 +42,44 @@ header nav {
 }
 
 search {
-    gap: 15px;
     max-width: 600px;
-    margin: 0 40px;
+    margin-top: 0;
+    margin-right: 40px;
+    margin-bottom: 0;
+    margin-left: 40px;
 }
 
 search form {
-    border: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     border-radius: 50px;
     overflow: hidden;
 }
 
 search input {
-    border: none;
-    padding: 6px 16px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 6px;
+    padding-right: 16px;
+    padding-bottom: 6px;
+    padding-left: 16px;
     outline: none;
     width: 400px;
 }
 
 search button {
-    border: none;
-    padding: 0 20px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 0;
+    padding-right: 20px;
+    padding-bottom: 0;
+    padding-left: 20px;
     cursor: pointer;
 }
 
@@ -56,21 +88,32 @@ search form button{
 }
 
 #mic {
-    border: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
     border-radius: 50%;
-    padding: 6px;
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
     cursor: pointer;
 }
 
 #account {
-    gap: 16px;
+    
 }
 
 #account ul {
-    gap: 16px;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 #account li {
@@ -79,8 +122,14 @@ search form button{
 
 .create-btn {
     border-radius: 50px;
-    border: 0;
-    padding: 6px 14px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    padding-top: 6px;
+    padding-right: 14px;
+    padding-bottom: 6px;
+    padding-left: 14px;
     cursor: pointer;
 }
 
@@ -97,7 +146,10 @@ main {
 .sidebar {
     width: 240px;
     border-right: 1px solid #e5e5e5;
-    padding: 12px 0;
+    padding-top: 12px;
+    padding-right: 0;
+    padding-bottom: 12px;
+    padding-left: 0;
     height: calc(100vh - 80px);
     position: sticky;
     top: 80px;
@@ -106,23 +158,33 @@ main {
 
 .sidebar nav ul {
     list-style: none;
-    padding: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .sidebar nav li {
-    margin: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
 }
 
 .sidebar nav a {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    padding: 10px 24px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
     text-decoration: none;
     color: #0f0f0f;
     border-radius: 10px;
-    margin: 0 12px;
-    transition: background 0.1s;
+    margin-top: 0;
+    margin-right: 12px;
+    margin-bottom: 0;
+    margin-left: 12px;
+    transition-property: background-color;
+    transition-duration: 0.1s;
 }
 
 .sidebar nav a.active {
@@ -130,21 +192,25 @@ main {
 }
 
 .sidebar nav a:hover {
-    background: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 .sidebar h2 {
-    display: flex;
-    align-items: center;
-    gap: 24px;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 24px;
+    padding-top: 10px;
+    padding-right: 24px;
+    padding-bottom: 10px;
+    padding-left: 24px;
     text-decoration: none;
     color: #0f0f0f;
     border-radius: 10px;
-    margin: 0 12px;
-    transition: background 0.1s;
+    margin-top: 0;
+    margin-right: 12px;
+    margin-bottom: 0;
+    margin-left: 12px;
+    transition-property: background-color;
+    transition-duration: 0.1s;
     cursor: pointer;
 }
 
@@ -157,14 +223,21 @@ main {
 }
 
 .sidebar hr {
-    border: none;
     border-top: #f2f2f2 1px solid;
-    margin: 12px 0;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    margin-top: 12px;
+    margin-right: 0;
+    margin-bottom: 12px;
+    margin-left: 0;
 }
 
 .content {
-    flex: 1;
-    padding: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
 }
 
 .filters {
@@ -174,13 +247,18 @@ main {
 }
 
 .filters nav ul {
-    gap: 12px;
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .filters nav li {
@@ -192,28 +270,35 @@ main {
 }
 
 .filter-btn {
-    background: #f2f2f2;
-    border: none;
-    padding: 8px 12px;
+    background-color: #f2f2f2;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    padding-top: 8px;
+    padding-right: 12px;
+    padding-bottom: 8px;
+    padding-left: 12px;
     border-radius: 8px;
     font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     white-space: nowrap;
-    transition: background 0.1s;
+    transition-property: background-color;
+    transition-duration: 0.1s;
 }
 
 .filter-btn:hover {
-    background: #e5e5e5;
+    background-color: #e5e5e5;
 }
 
 .filter-btn.active {
-    background: #0f0f0f;
+    background-color: #0f0f0f;
     color: white;
 }
 
 .filter-btn.active:hover {
-    background: #272727;
+    background-color: #272727;
 }
 
 .shorts-section {
@@ -228,11 +313,16 @@ main {
 }
 
 .shorts-container {
-    gap: 16px;
     padding-bottom: 8px;
     list-style: none;
-    margin: 0;
-    padding: 0 0 8px 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 8px;
+    padding-left: 0;
 }
 
 .shorts-container li {
@@ -240,12 +330,14 @@ main {
 }
 
 .short-item {
-    flex-shrink: 0;
     width: 265px;
     cursor: pointer;
     border-radius: 12px;
-    padding: 10px;
-    transition: 0.3s;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transition-duration: 0.3s;
 }
 
 .short-item:hover {
@@ -261,7 +353,7 @@ main {
     height: 400px;
     object-fit: cover;
     border-radius: 12px;
-    transition: 0.3s;
+    transition-duration: 0.3s;
     margin-bottom: 12px;
 }
 
@@ -294,8 +386,11 @@ main {
 .video-card {
     cursor: pointer;
     border-radius: 12px;
-    padding: 10px;
-    transition: 0.3s;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    transition-duration: 0.3s;
 }
 
 .video-card:hover {
@@ -308,7 +403,10 @@ main {
 
 .video-card header {
     background-color: transparent;
-    padding: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     margin-bottom: 12px;
 }
 
@@ -327,33 +425,36 @@ main {
     position: absolute;
     bottom: 12px;
     right: 8px;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 2px 6px;
+    padding-top: 2px;
+    padding-right: 6px;
+    padding-bottom: 2px;
+    padding-left: 6px;
     border-radius: 4px;
     font-size: 14px;
     font-weight: 500;
 }
 
 .thumbnail button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     bottom: 12px;
     right: 8px;
-    background: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     font-size: 14px;
     font-weight: 500;
-    border: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
 }
 
 .video-info {
-    gap: 12px;
+    
 }
 
 .avatar {
