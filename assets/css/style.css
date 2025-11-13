@@ -188,15 +188,18 @@ main {
     padding-bottom: 12px;
 }
 
-.filters nav {
+.filters nav ul {
     display: flex;
     gap: 12px;
     overflow-x: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.filters nav::-webkit-scrollbar {
+.filters nav ul::-webkit-scrollbar {
     display: none;
 }
 
