@@ -15,8 +15,8 @@
 
 <body>
     <header>
-        <nav id="menu">
-            <button class="menu-toggle" aria-label="Menu">
+        <nav class="header-nav">
+            <button class="btn-menu" aria-label="Menu">
                 <span class="material-icons">menu</span>
             </button>
             <a href="../index.html" class="logo">
@@ -30,25 +30,25 @@
                     <span class="material-icons">search</span>
                 </button>
             </form>
-            <button id="mic" aria-label="Pesquisa por voz">
+            <button class="mic-btn" aria-label="Pesquisa por voz">
                 <span class="material-icons">mic</span>
             </button>
         </search>
-        <nav id="account">
+        <nav class="account-nav">
             <ul>
                 <li>
-                    <button class="create-btn">
+                    <button class="btn-create">
                         <span class="material-icons">add</span>
                         <span>Criar</span>
                     </button>
                 </li>
                 <li>
-                    <button class="notifications-btn" aria-label="Notificações">
+                    <button class="btn-notifications" aria-label="Notificações">
                         <span class="material-icons">notifications</span>
                     </button>
                 </li>
                 <li>
-                    <button class="profile-btn">
+                    <button class="btn-profile">
                         <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
                     </button>
                 </li>
@@ -57,40 +57,40 @@
     </header>
 
     <main>
-        <section class="channel-banner">
+        <section class="banner">
             <figure>
                 <img src="https://placehold.co/1200x300/4285f4/ffffff?text=Mateus+Artico%0AChannel+Testeeee" alt="Banner do canal Mateus Artico">
                 <figcaption class="sr-only">Banner promocional do canal com logo e branding</figcaption>
             </figure>
         </section>
 
-        <section class="channel-header">
-            <figure class="channel-avatar">
+        <section class="header">
+            <figure class="avatar">
                 <img src="https://placehold.co/120x120/" alt="Avatar do canal Mateus Artico">
             </figure>
             
-            <section class="channel-info">
+            <section class="info">
                 <h1>Mateus Artico</h1>
-                <address class="channel-handle"><strong>@mateusartico</strong></address>
-                <p class="subscriber-count">
+                <address class="handle"><strong>@mateusartico</strong></address>
+                <p class="stats">
                     <data value="15420">15,4 mil inscritos</data> • 
                     <data value="127">127 vídeos</data>
                 </p>
-                <section class="channel-description">
+                <section class="description">
                     <p>Desenvolvedor apaixonado por...</p>
                 </section>
-                <details class="channel-description">
+                <details class="description">
                     <summary> </summary>
                     <mark>HTML semântico</mark> e acessibilidade. 
                     Compartilho tutoriais sobre <abbr title="HyperText Markup Language">HTML</abbr>, 
                     <abbr title="Cascading Style Sheets">CSS</abbr> e JavaScript.
                 </details>
 
-                <button class="subscribe-btn">Inscrever-se</button>
+                <button class="btn-subscribe">Inscrever-se</button>
             </section>
         </section>
 
-        <nav class="channel-tabs" role="tablist">
+        <nav class="tabs" role="tablist">
             <ul>
                 <li>
                     <button id="videos-tab" role="tab" aria-controls="videos-panel" aria-selected="true">Vídeos</button>
@@ -102,7 +102,7 @@
                     <button id="posts-tab" role="tab" aria-controls="posts-panel" aria-selected="false">Posts</button>
                 </li>
                 <li>
-                    <button id="search-button" aria-label="Pesquisar no canal">
+                    <button class="btn-search" aria-label="Pesquisar no canal">
                         <span class="material-icons">search</span>
                     </button>
                 </li>
@@ -112,16 +112,16 @@
         <section id="videos-panel" class="tab-content active" role="tabpanel" aria-labelledby="videos-tab">
             <h2>Vídeos Recentes</h2>
             
-            <ul class="videos-grid">
+            <ul class="grid">
                 <li>
-                    <article class="video-item">
-                        <figure class="video-thumbnail">
+                    <article class="video">
+                        <figure class="thumbnail">
                             <img src="https://placehold.co/320x180/" alt="Aula 1 | HTML5 Semântico">
                             <time datetime="PT15M30S" class="duration">15:30</time>
                         </figure>
-                        <section class="video-details">
+                        <section class="details">
                             <h3>Aula 1 | HTML5 Semântico</h3>
-                            <p class="video-stats">
+                            <p class="stats">
                                 <data value="8420">8,4 mil visualizações</data> • 
                                 <time datetime="2024-11-15">há 2 semanas</time>
                             </p>
@@ -129,14 +129,14 @@
                     </article>
                 </li>
                 <li>
-                    <article class="video-item">
-                        <figure class="video-thumbnail">
+                    <article class="video">
+                        <figure class="thumbnail">
                             <img src="https://placehold.co/320x180/" alt="CSS Grid Layout Responsivo">
                             <time datetime="PT22M45S" class="duration">22:45</time>
                         </figure>
-                        <section class="video-details">
+                        <section class="details">
                             <h3>CSS: Layout Responsivo na Prática</h3>
-                            <p class="video-stats">
+                            <p class="stats">
                                 <data value="12300">12,3 mil visualizações</data> • 
                                 <time datetime="2024-11-08">há 3 semanas</time>
                             </p>
@@ -150,7 +150,7 @@
         <section id="stats-panel" class="tab-content" role="tabpanel">
             <h2>Estatísticas do Canal</h2>
             
-            <table class="stats-table">
+            <table class="table">
                 <caption style="margin-bottom: 15px;">Performance do canal nos últimos 3 meses</caption>
                 <thead>
                     <tr>
@@ -199,8 +199,8 @@
         <section id="contact-panel" class="tab-content" role="tabpanel">
             <h2>Suporte do YouTube</h2>
             
-            <section class="support-container">
-                <aside class="support-sidebar">
+            <section class="container">
+                <aside class="sidebar">
                     <h3>Central de Ajuda</h3>
                     <ul>
                         <li><a href="#">Perguntas Frequentes</a></li>
@@ -211,7 +211,7 @@
                     </ul>
                 </aside>
 
-                <section class="support-form">
+                <section class="form">
                     <h3>Fale Conosco</h3>
                     <p>Precisa de ajuda? Entre em contato com nossa equipe de suporte.</p>
                     
@@ -248,9 +248,9 @@
             </section>
         </section>
 
-        <section class="info-btn">
-            <input type="checkbox" name="show-info" id="show-info">
-            <dialog id="channel-info-modal">
+        <section class="modal-trigger">
+            <input type="checkbox" name="modal" id="modal">
+            <dialog class="modal">
                 <header>
                     <h2>Sobre o Canal</h2>
                 </header>
@@ -266,16 +266,16 @@
                     <p><mark>Novo conteúdo toda semana!</mark></p>
                 </section>
             </dialog>
-            <label for="show-info" aria-label="Abrir informações do canal">
+            <label for="modal" aria-label="Abrir informações do canal">
                 <span class="material-icons">info</span>
             </label>
         </section>
 
     </main>
 
-    <footer class="site-footer">
-        <section class="footer-content">
-            <section class="footer-section">
+    <footer>
+        <section class="content">
+            <section class="section">
                 <h3>YouTube</h3>
                 <nav>
                     <ul>
@@ -286,7 +286,7 @@
                 </nav>
             </section>
             
-            <section class="footer-section">
+            <section class="section">
                 <h3>Políticas</h3>
                 <nav>
                     <ul>
@@ -298,7 +298,7 @@
             </section>
         </section>
         
-        <section class="footer-bottom">
+        <section class="bottom">
             <p>&copy; <time datetime="2025">2025</time> Youtube Teste Educacional</p>
             <address>
                 Desenvolvido por <strong>Mateus Artico</strong> - 
