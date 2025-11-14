@@ -224,3 +224,40 @@ main {
     margin-left: 240px;
     padding: 0 24px;
 }
+
+/* Filters */
+.filters {
+    margin-bottom: 24px;
+    border-bottom: 1px solid #303030;
+    padding-bottom: 12px;
+}
+
+.filters ul {
+    list-style: none;
+
+}
+
+.filters li {
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.filter {
+    background: #272727;
+    border: 1px solid #303030;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+
+}
+
+.filter:hover {
+    background: #3f3f3f;
+}
+
+.filter.active {
+    background: #fff;
+    color: #0f0f0f;
+}
