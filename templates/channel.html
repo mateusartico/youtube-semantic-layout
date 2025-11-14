@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <header role="banner">
+    <header>
         <nav id="menu">
-            <button class="menu-toggle">
+            <button class="menu-toggle" aria-label="Menu">
                 <span class="material-icons">menu</span>
             </button>
             <a href="../index.html" class="logo">
@@ -26,11 +26,11 @@
         <search>
             <form action="" method="get">
                 <input type="search" placeholder="Pesquisar">
-                <button type="submit">
+                <button type="submit" aria-label="Pesquisar">
                     <span class="material-icons">search</span>
                 </button>
             </form>
-            <button id="mic">
+            <button id="mic" aria-label="Pesquisa por voz">
                 <span class="material-icons">mic</span>
             </button>
         </search>
@@ -43,7 +43,7 @@
                     </button>
                 </li>
                 <li>
-                    <button class="notifications-btn">
+                    <button class="notifications-btn" aria-label="Notificações">
                         <span class="material-icons">notifications</span>
                     </button>
                 </li>
@@ -102,7 +102,7 @@
                     <button id="posts-tab">Posts</button>
                 </li>
                 <li>
-                    <button id="search-button">
+                    <button id="search-button" aria-label="Pesquisar no canal">
                         <span class="material-icons">search</span>
                     </button>
                 </li>
@@ -266,7 +266,7 @@
                     <p><mark>Novo conteúdo toda semana!</mark></p>
                 </section>
             </dialog>
-            <label for="show-info">
+            <label for="show-info" aria-label="Abrir informações do canal">
                 <span class="material-icons">info</span>
             </label>
         </section>
