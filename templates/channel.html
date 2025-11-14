@@ -23,7 +23,7 @@
                 <img src="https://placehold.co/93x20/" alt="Logo do YouTube">
             </a>
         </nav>
-        <search>
+        <search role="search">
             <form action="" method="get">
                 <input type="search" placeholder="Pesquisar">
                 <button type="submit" aria-label="Pesquisar">
@@ -90,16 +90,16 @@
             </section>
         </section>
 
-        <nav class="channel-tabs">
+        <nav class="channel-tabs" role="tablist">
             <ul>
                 <li>
-                    <button id="videos-tab">Vídeos</button>
+                    <button id="videos-tab" role="tab" aria-controls="videos-panel" aria-selected="true">Vídeos</button>
                 </li>
                 <li>
-                    <button id="playlist-tab">Playlists</button>
+                    <button id="playlist-tab" role="tab" aria-controls="playlist-panel" aria-selected="false">Playlists</button>
                 </li>
                 <li>
-                    <button id="posts-tab">Posts</button>
+                    <button id="posts-tab" role="tab" aria-controls="posts-panel" aria-selected="false">Posts</button>
                 </li>
                 <li>
                     <button id="search-button" aria-label="Pesquisar no canal">
@@ -109,7 +109,7 @@
             </ul>
         </nav>
 
-        <section id="videos-panel" class="tab-content active">
+        <section id="videos-panel" class="tab-content active" role="tabpanel" aria-labelledby="videos-tab">
             <h2>Vídeos Recentes</h2>
             
             <ul class="videos-grid">
@@ -147,7 +147,7 @@
         </section>
         
 
-        <section id="stats-panel" class="tab-content">
+        <section id="stats-panel" class="tab-content" role="tabpanel" aria-labelledby="stats-tab">
             <h2>Estatísticas do Canal</h2>
             
             <table class="stats-table">
@@ -196,11 +196,11 @@
             </table>
         </section>
 
-        <section id="contact-panel" class="tab-content">
+        <section id="contact-panel" class="tab-content" role="tabpanel" aria-labelledby="contact-tab">
             <h2>Suporte do YouTube</h2>
             
             <section class="support-container">
-                <aside class="support-sidebar">
+                <aside class="support-sidebar" role="complementary">
                     <h3>Central de Ajuda</h3>
                     <ul>
                         <li><a href="#">Perguntas Frequentes</a></li>
@@ -230,16 +230,16 @@
                             </select>
                             
                             <label for="name">Nome Completo:</label>
-                            <input type="text" id="name" name="name" required>
-                            <small>Digite seu nome completo</small>
+                            <input type="text" id="name" name="name" required aria-describedby="name-help">
+                            <small id="name-help">Digite seu nome completo</small>
                             
                             <label for="email">E-mail:</label>
-                            <input type="email" id="email" name="email" required>
-                            <small>E-mail associado à sua conta do YouTube</small>
+                            <input type="email" id="email" name="email" required aria-describedby="email-help">
+                            <small id="email-help">E-mail associado à sua conta do YouTube</small>
                             
                             <label for="message">Descrição do Problema:</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <small>Descreva detalhadamente o problema que está enfrentando</small>
+                            <textarea id="message" name="message" rows="5" required aria-describedby="message-help"></textarea>
+                            <small id="message-help">Descreva detalhadamente o problema que está enfrentando</small>
                             
                             <button type="submit">Enviar Solicitação</button>
                         </fieldset>
