@@ -152,3 +152,75 @@ search button {
     border-radius: 50%;
     vertical-align: middle;
 }
+
+/* Main */
+main {
+    margin-top: 56px;
+    padding-top: 16px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    position: fixed;
+    left: 0;
+    top: 56px;
+    height: calc(100vh - 56px);
+    background: #0f0f0f;
+    padding: 12px 0;
+    overflow-y: auto;
+}
+
+.sidebar nav {
+    margin-bottom: 12px;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 24px;
+    color: #aaa;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 14px;
+}
+
+.sidebar a:hover {
+    background: #272727;
+}
+
+.sidebar a.active {
+    background: #272727;
+    font-weight: 500;
+}
+
+.sidebar .material-icons {
+    margin-right: 24px;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+.sidebar hr {
+    border: none;
+    border-top: 1px solid #303030;
+    margin: 12px 0;
+}
+
+/* Content */
+.content {
+    margin-left: 240px;
+    padding: 0 24px;
+}
