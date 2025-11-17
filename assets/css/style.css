@@ -7,13 +7,13 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: #0f0f0f;
+    background: #181a1b;
     color: #fff;
 }
 
 /* Header */
 header {
-    background: #0f0f0f;
+    background: #181a1b;
     padding: 0 16px;
     height: 56px;
     position: fixed;
@@ -48,7 +48,7 @@ header {
 }
 
 .logo img {
-    height: 20px;
+    height: 18px;
     vertical-align: middle;
 }
 
@@ -57,7 +57,7 @@ search {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
 }
 
 search form {
@@ -66,6 +66,7 @@ search form {
     border: 1px solid #303030;
     border-radius: 20px;
     overflow: hidden;
+    position: relative;
 }
 
 search input {
@@ -73,7 +74,7 @@ search input {
     border: none;
     color: #fff;
     padding: 8px 16px;
-    width: 400px;
+    width: 530px;
     outline: none;
     vertical-align: top;
 }
@@ -82,9 +83,14 @@ search button {
     background: #222;
     border: none;
     color: #fff;
-    padding: 8px 16px;
     cursor: pointer;
     vertical-align: top;
+}
+
+search button[aria-label="Pesquisar"] {
+    position: absolute;
+    right: 0;
+    padding: 5px 12px;
 }
 
 .mic-btn {
@@ -92,12 +98,12 @@ search button {
     border: none;
     color: #fff;
     cursor: pointer;
-    padding: 8px;
+    padding: 6px;
     border-radius: 50%;
     margin-left: 8px;
-    vertical-align: middle;
+    position: relative;
+    bottom: 2px;
 }
-
 .mic-btn:hover {
     background: #272727;
 }
@@ -122,10 +128,15 @@ search button {
     background: none;
     border: 1px solid #303030;
     color: #fff;
-    padding: 8px 16px;
-    border-radius: 18px;
+    padding: 2px 8px;
+    border-radius: 50px;
     cursor: pointer;
     vertical-align: middle;
+}
+
+.btn-create p {
+    float: right;
+    margin: 5px 5px;
 }
 
 .btn-create:hover {
@@ -166,7 +177,7 @@ main {
     left: 0;
     top: 56px;
     height: calc(100vh - 56px);
-    background: #0f0f0f;
+    background: #181a1b;
     padding: 12px 0;
     overflow-y: auto;
 }
@@ -234,7 +245,8 @@ main {
 
 .filters ul {
     list-style: none;
-
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .filters li {
@@ -250,7 +262,7 @@ main {
     border-radius: 8px;
     cursor: pointer;
     font-size: 14px;
-
+    white-space: nowrap;
 }
 
 .filter:hover {
@@ -260,4 +272,179 @@ main {
 .filter.active {
     background: #fff;
     color: #0f0f0f;
+}
+
+/* Video Grid */
+.video-grid {
+    width: 100%;
+}
+
+.video-grid article {
+    display: inline-block;
+    width: 320px;
+    margin: 0 16px 40px 0;
+    vertical-align: top;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.video-grid article:hover {
+    cursor: pointer;
+    background: #353535;
+}
+
+.video-grid article:hover .thumbnail {
+    border-radius: 0;
+}
+
+.video-grid article > header {
+    position: static;
+    background: none;
+    padding: 0;
+    height: auto;
+    border: none;
+    z-index: auto;
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 180px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 12px;
+    transition: 0.2s;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.duration {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.video-info {
+    padding-left: 48px;
+    position: relative;
+}
+
+.avatar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.details h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+
+.details .channel {
+    font-size: 13px;
+}
+
+.metadata {
+    font-size: 13px;
+    color: #aaa;
+    line-height: 1.2;
+}
+
+.metadata p {
+    margin: 0;
+}
+
+/* Shorts */
+.shorts h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 32px 0 16px 0;
+    color: #fff;
+}
+
+.shorts-grid {
+    list-style: none;
+    width: 100%;
+}
+
+.shorts-grid li {
+    display: inline-block;
+    width: 250px;
+    margin: 0 16px 40px 0;
+    vertical-align: top;
+}
+
+
+.short {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 8px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+    transition: 0.2s background;
+}
+
+.short:hover {
+    background-color: #353535;
+}
+
+.short video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.short figcaption {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 8px 8px 0;
+}
+
+.short h3 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.short p {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+.short mark {
+    color: black;
+}
+
+.short data {
+    font-size: 12px;
 }
