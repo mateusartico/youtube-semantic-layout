@@ -30,3 +30,6 @@ Representa parágrafos de texto. Base da estrutura textual semântica, facilita 
 
 ### strong, em
 Indicam importância (strong) e ênfase (em) no texto. Melhoram a acessibilidade transmitindo entonação para leitores de tela e ajudam o SEO a identificar termos importantes no conteúdo.
+
+### figure, figcaption
+Agrupam conteúdo visual com sua legenda. Essenciais para acessibilidade ao fornecer contexto para imagens e vídeos, e importantes para SEO ao associar descrições textuais ao conteúdo visual.
