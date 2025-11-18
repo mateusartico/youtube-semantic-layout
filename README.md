@@ -15,3 +15,6 @@ Agrupa conteúdo relacionado tematicamente. Melhora a estrutura semântica do do
 
 ### article
 Representa conteúdo independente e autocontido. Fundamental para SEO pois define unidades de conteúdo que podem ser distribuídas independentemente e facilita a indexação de conteúdos específicos.
+
+### aside
+Define conteúdo complementar ao conteúdo principal. Melhora a acessibilidade permitindo que usuários de leitores de tela identifiquem conteúdo secundário e ajuda o SEO a distinguir conteúdo principal de complementar.
