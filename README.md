@@ -6,3 +6,6 @@ Projeto simples de clone do YouTube construído com HTML5 e CSS3 semânticos par
 
 ### nav
 Representa seções de navegação da página. Melhora a acessibilidade permitindo que leitores de tela identifiquem áreas de navegação e facilita o SEO ao estruturar hierarquicamente os links do site.
+
+### main
+Define o conteúdo principal do documento. Essencial para acessibilidade pois permite que leitores de tela pulem diretamente ao conteúdo principal e ajuda motores de busca a identificar o conteúdo mais relevante da página.
