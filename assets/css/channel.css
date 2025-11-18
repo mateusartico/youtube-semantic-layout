@@ -562,6 +562,7 @@ small {
     padding: 24px;
     width: 400px;
     display: none;
+    color: white;
 }
 
 .modal-trigger input:checked + .modal {
