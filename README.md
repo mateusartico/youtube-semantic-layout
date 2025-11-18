@@ -45,3 +45,6 @@ Define informações de contato. Importante para acessibilidade ao identificar d
 
 ### mark
 Destaca texto relevante no contexto atual. Melhora a acessibilidade sinalizando conteúdo destacado para leitores de tela e pode ajudar o SEO ao enfatizar termos importantes contextualmente.
+
+### form
+Cria formulários para entrada de dados. Essencial para acessibilidade quando bem estruturado com labels e importante para SEO ao permitir interação do usuário e coleta de dados.
