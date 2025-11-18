@@ -48,3 +48,6 @@ Destaca texto relevante no contexto atual. Melhora a acessibilidade sinalizando 
 
 ### form
 Cria formulários para entrada de dados. Essencial para acessibilidade quando bem estruturado com labels e importante para SEO ao permitir interação do usuário e coleta de dados.
+
+### table, caption, thead, tbody, tfoot
+Estruturam dados tabulares de forma semântica. Cruciais para acessibilidade permitindo navegação eficiente por tabelas em leitores de tela e importantes para SEO ao organizar dados estruturados.
