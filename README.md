@@ -24,3 +24,6 @@ Representa o rodapé de uma seção ou documento. Essencial para acessibilidade 
 
 ### h1, h2, h3
 Definem hierarquia de cabeçalhos. Cruciais para SEO pois estruturam o conteúdo para motores de busca e fundamentais para acessibilidade permitindo navegação por cabeçalhos em leitores de tela.
+
+### p
+Representa parágrafos de texto. Base da estrutura textual semântica, facilita a leitura por tecnologias assistivas e melhora a indexação de conteúdo textual pelos motores de busca.
