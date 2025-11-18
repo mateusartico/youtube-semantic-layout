@@ -51,3 +51,6 @@ Cria formulários para entrada de dados. Essencial para acessibilidade quando be
 
 ### table, caption, thead, tbody, tfoot
 Estruturam dados tabulares de forma semântica. Cruciais para acessibilidade permitindo navegação eficiente por tabelas em leitores de tela e importantes para SEO ao organizar dados estruturados.
+
+### details, summary
+Criam conteúdo expansível interativo. Melhoram a acessibilidade fornecendo controle sobre a exibição de conteúdo e podem beneficiar o SEO ao organizar informações de forma hierárquica.
