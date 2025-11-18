@@ -12,3 +12,6 @@ Define o conteúdo principal do documento. Essencial para acessibilidade pois pe
 
 ### section
 Agrupa conteúdo relacionado tematicamente. Melhora a estrutura semântica do documento para SEO e permite que tecnologias assistivas naveguem entre seções distintas do conteúdo.
+
+### article
+Representa conteúdo independente e autocontido. Fundamental para SEO pois define unidades de conteúdo que podem ser distribuídas independentemente e facilita a indexação de conteúdos específicos.
