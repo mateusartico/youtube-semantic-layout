@@ -57,3 +57,6 @@ Criam conteúdo expansível interativo. Melhoram a acessibilidade fornecendo con
 
 ### abbr
 Define abreviações e acrônimos. Fundamental para acessibilidade ao fornecer expansões de termos abreviados e útil para SEO ao esclarecer terminologias específicas.
+
+### fieldset, legend
+Agrupam e rotulam campos de formulário relacionados. Essenciais para acessibilidade ao organizar controles de forma lógica para leitores de tela e melhoram a usabilidade geral dos formulários.
