@@ -54,3 +54,6 @@ Estruturam dados tabulares de forma semântica. Cruciais para acessibilidade per
 
 ### details, summary
 Criam conteúdo expansível interativo. Melhoram a acessibilidade fornecendo controle sobre a exibição de conteúdo e podem beneficiar o SEO ao organizar informações de forma hierárquica.
+
+### abbr
+Define abreviações e acrônimos. Fundamental para acessibilidade ao fornecer expansões de termos abreviados e útil para SEO ao esclarecer terminologias específicas.
