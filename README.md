@@ -60,3 +60,6 @@ Define abreviações e acrônimos. Fundamental para acessibilidade ao fornecer e
 
 ### fieldset, legend
 Agrupam e rotulam campos de formulário relacionados. Essenciais para acessibilidade ao organizar controles de forma lógica para leitores de tela e melhoram a usabilidade geral dos formulários.
+
+### dialog
+Cria caixas de diálogo e janelas modais. Importante para acessibilidade ao gerenciar foco e navegação em conteúdo modal e melhora a experiência do usuário com interações estruturadas.
