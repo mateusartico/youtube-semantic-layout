@@ -18,3 +18,6 @@ Representa conteúdo independente e autocontido. Fundamental para SEO pois defin
 
 ### aside
 Define conteúdo complementar ao conteúdo principal. Melhora a acessibilidade permitindo que usuários de leitores de tela identifiquem conteúdo secundário e ajuda o SEO a distinguir conteúdo principal de complementar.
+
+### footer
+Representa o rodapé de uma seção ou documento. Essencial para acessibilidade ao fornecer informações de contexto e contato, e importante para SEO ao organizar metadados e links relacionados.
