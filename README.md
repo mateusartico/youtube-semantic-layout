@@ -9,3 +9,6 @@ Representa seções de navegação da página. Melhora a acessibilidade permitin
 
 ### main
 Define o conteúdo principal do documento. Essencial para acessibilidade pois permite que leitores de tela pulem diretamente ao conteúdo principal e ajuda motores de busca a identificar o conteúdo mais relevante da página.
+
+### section
+Agrupa conteúdo relacionado tematicamente. Melhora a estrutura semântica do documento para SEO e permite que tecnologias assistivas naveguem entre seções distintas do conteúdo.
