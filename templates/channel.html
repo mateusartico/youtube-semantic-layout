@@ -16,11 +16,11 @@
 <body>
     <header>
         <nav class="header-nav">
-            <button class="btn-menu" aria-label="Menu">
+            <button class="menu-toggle" aria-label="Menu">
                 <span class="material-icons">menu</span>
             </button>
             <a href="../index.html" class="logo">
-                <img src="https://placehold.co/93x20/" alt="Logo do YouTube">
+                <img src="../assets/img/youtube_logo.png" alt="Logo do YouTube">
             </a>
         </nav>
         <search>
@@ -39,7 +39,7 @@
                 <li>
                     <button class="btn-create">
                         <span class="material-icons">add</span>
-                        <span>Criar</span>
+                        <p>Criar</p>
                     </button>
                 </li>
                 <li>
@@ -48,9 +48,11 @@
                     </button>
                 </li>
                 <li>
-                    <button class="btn-profile">
-                        <img src="https://placehold.co/35x35/" alt="Foto do perfil do usuário">
-                    </button>
+                    <a href="#">
+                        <button class="btn-profile">
+                            <img src="https://placehold.co/35x35/ff0000/ffffff?text=M" alt="Meu canal">
+                        </button>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -59,14 +61,14 @@
     <main>
         <section class="banner">
             <figure>
-                <img src="https://placehold.co/1200x300/4285f4/ffffff?text=Mateus+Artico%0AChannel+Testeeee" alt="Banner do canal Mateus Artico">
+                <img src="https://placehold.co/1200x300/4285f4/ffffff?text=Mateus+Artico" alt="Banner do canal Mateus Artico">
                 <figcaption class="sr-only">Banner promocional do canal com logo e branding</figcaption>
             </figure>
         </section>
 
         <section class="header">
             <figure class="avatar">
-                <img src="https://placehold.co/120x120/" alt="Avatar do canal Mateus Artico">
+                <img src="https://placehold.co/120x120/ff0000/ffffff?text=M" alt="Avatar do canal Mateus Artico">
             </figure>
             
             <section class="info">
@@ -241,6 +243,7 @@
                             <textarea id="message" name="message" rows="5" required aria-describedby="message-help"></textarea>
                             <small id="message-help">Descreva detalhadamente o problema que está enfrentando</small>
                             
+                            <br>
                             <button type="submit">Enviar Solicitação</button>
                         </fieldset>
                     </form>
