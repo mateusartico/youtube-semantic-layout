@@ -36,3 +36,6 @@ Agrupam conteúdo visual com sua legenda. Essenciais para acessibilidade ao forn
 
 ### img
 Incorpora imagens no documento. Fundamental para acessibilidade quando usado com atributo alt descritivo e importante para SEO ao fornecer conteúdo visual indexável pelos motores de busca.
+
+### time
+Representa datas e horários específicos. Melhora a acessibilidade fornecendo informações temporais estruturadas e facilita o SEO ao permitir que motores de busca compreendam dados temporais.
