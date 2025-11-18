@@ -39,3 +39,6 @@ Incorpora imagens no documento. Fundamental para acessibilidade quando usado com
 
 ### time
 Representa datas e horários específicos. Melhora a acessibilidade fornecendo informações temporais estruturadas e facilita o SEO ao permitir que motores de busca compreendam dados temporais.
+
+### address
+Define informações de contato. Importante para acessibilidade ao identificar dados de contato e valioso para SEO ao fornecer informações estruturadas sobre autoria e contato.
