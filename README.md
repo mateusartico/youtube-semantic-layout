@@ -27,3 +27,6 @@ Definem hierarquia de cabeçalhos. Cruciais para SEO pois estruturam o conteúdo
 
 ### p
 Representa parágrafos de texto. Base da estrutura textual semântica, facilita a leitura por tecnologias assistivas e melhora a indexação de conteúdo textual pelos motores de busca.
+
+### strong, em
+Indicam importância (strong) e ênfase (em) no texto. Melhoram a acessibilidade transmitindo entonação para leitores de tela e ajudam o SEO a identificar termos importantes no conteúdo.
