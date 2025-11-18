@@ -324,6 +324,23 @@ main {
     object-fit: cover;
 }
 
+.thumbnail > button {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background: rgba(0,0,0,0.8);
+    border: 0;
+    color: #fff;
+    padding: 2px 4px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.thumbnail > button:hover {
+    cursor: pointer;
+    background-color: #222;
+}
+
 .duration {
     position: absolute;
     bottom: 8px;
