@@ -42,3 +42,6 @@ Representa datas e horários específicos. Melhora a acessibilidade fornecendo i
 
 ### address
 Define informações de contato. Importante para acessibilidade ao identificar dados de contato e valioso para SEO ao fornecer informações estruturadas sobre autoria e contato.
+
+### mark
+Destaca texto relevante no contexto atual. Melhora a acessibilidade sinalizando conteúdo destacado para leitores de tela e pode ajudar o SEO ao enfatizar termos importantes contextualmente.
