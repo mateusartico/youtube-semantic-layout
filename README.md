@@ -1,65 +1,75 @@
 # YouTube Semantic Layout
 
-Projeto simples de clone do YouTube construído com HTML5 e CSS3 semânticos para praticar desenvolvimento web semântico.
+Projeto de clone do YouTube construído com HTML5 e CSS3 semânticos para demonstrar o uso prático das tags semânticas do HTML.
 
-## Tags HTML Semânticas Utilizadas
+Cada tag utilizada é explicada no código HTML com comentários detalhados sobre sua função, contexto de uso e impacto na acessibilidade/SEO. Este README complementa essas explicações com descrições mais aprofundadas.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5:** Estrutura semântica seguindo as melhores práticas de acessibilidade
+* **CSS3:** Estilização dentro das regras exigidadas
+
+---
+
+## 📚 Estrutura HTML Semântica
+
+### Tags de Estrutura Principal
+
+| Tag | Função | Justificativa de Uso |
+| :--- | :--- | :--- |
+| `<nav>` | Seção de navegação | Agrupa os links de navegação principal do site (menu lateral e superior) |
+| `<main>` | Conteúdo principal | Envolve todo o conteúdo único da página, separando-o do header e sidebar |
+| `<section>` | Seção temática | Agrupa logicamente diferentes áreas como "Vídeos em Alta", "Recomendados" |
+| `<article>` | Conteúdo independente | Cada vídeo individual que pode existir de forma autônoma |
+| `<aside>` | Conteúdo complementar | Sidebar com canais sugeridos e informações secundárias |
+| `<footer>` | Rodapé | Informações de copyright e links institucionais |
+
+### Tags de Conteúdo Específico
+
+| Tag | Propósito | Justificativa de Uso |
+| :--- | :--- | :--- |
+| `<h1>`-`<h3>` | Hierarquia de títulos | Estrutura semântica: H1 para título principal, H2 para seções, H3 para vídeos |
+| `<figure>` | Mídia com contexto | Agrupa thumbnail do vídeo com suas informações relacionadas |
+| `<figcaption>` | Legenda da mídia | Fornece título e descrição do vídeo para o thumbnail |
+| `<img>` | Imagens | Thumbnails dos vídeos e avatares dos canais com alt text descritivo |
+| `<time>` | Informação temporal | Marca semanticamente quando o vídeo foi publicado |
+| `<address>` | Informações de contato | Dados do canal/criador do conteúdo |
+
+---
+
+## 📖 Explicações Detalhadas das Tags
 
 ### nav
-Representa seções de navegação da página. Melhora a acessibilidade permitindo que leitores de tela identifiquem áreas de navegação e facilita o SEO ao estruturar hierarquicamente os links do site.
+Representa seções de navegação da página, sendo fundamental para a estrutura de um site como o YouTube. No contexto deste projeto, é utilizada tanto para o menu lateral quanto para a navegação superior, permitindo que leitores de tela identifiquem rapidamente as áreas de navegação. Para SEO, estrutura hierarquicamente os links do site, facilitando a indexação e compreensão da arquitetura da informação pelos motores de busca.
 
 ### main
-Define o conteúdo principal do documento. Essencial para acessibilidade pois permite que leitores de tela pulem diretamente ao conteúdo principal e ajuda motores de busca a identificar o conteúdo mais relevante da página.
+Define o conteúdo principal do documento, sendo essencial em layouts complexos como o YouTube. Esta tag permite que usuários de tecnologias assistivas pulem diretamente ao conteúdo principal, ignorando navegação e sidebars. Para motores de busca, identifica claramente qual é o conteúdo mais relevante da página, melhorando a indexação e o ranking nos resultados de pesquisa.
 
 ### section
-Agrupa conteúdo relacionado tematicamente. Melhora a estrutura semântica do documento para SEO e permite que tecnologias assistivas naveguem entre seções distintas do conteúdo.
+Agrupa conteúdo relacionado tematicamente, sendo ideal para organizar diferentes categorias de vídeos no YouTube. Melhora significativamente a estrutura semântica do documento para SEO, permitindo que motores de busca compreendam a organização do conteúdo. Para acessibilidade, permite que tecnologias assistivas naveguem entre seções distintas, oferecendo uma experiência mais organizada aos usuários.
 
 ### article
-Representa conteúdo independente e autocontido. Fundamental para SEO pois define unidades de conteúdo que podem ser distribuídas independentemente e facilita a indexação de conteúdos específicos.
+Representa conteúdo independente e autocontido, perfeito para cada vídeo individual no YouTube. É fundamental para SEO pois define unidades de conteúdo que podem ser distribuídas independentemente, facilitando a indexação de vídeos específicos. Para acessibilidade, permite que leitores de tela identifiquem cada vídeo como uma unidade completa de informação.
 
 ### aside
-Define conteúdo complementar ao conteúdo principal. Melhora a acessibilidade permitindo que usuários de leitores de tela identifiquem conteúdo secundário e ajuda o SEO a distinguir conteúdo principal de complementar.
+Define conteúdo complementar ao conteúdo principal, ideal para sidebars com canais sugeridos e informações secundárias. Melhora a acessibilidade permitindo que usuários de leitores de tela identifiquem facilmente conteúdo secundário versus principal. Para SEO, ajuda motores de busca a distinguir entre conteúdo principal e complementar, evitando que informações secundárias diluam a relevância do conteúdo principal.
 
 ### footer
-Representa o rodapé de uma seção ou documento. Essencial para acessibilidade ao fornecer informações de contexto e contato, e importante para SEO ao organizar metadados e links relacionados.
+Representa o rodapé de uma seção ou documento, essencial para organizar informações institucionais do YouTube. Para acessibilidade, fornece um local previsível para informações de contexto, contato e navegação secundária. É importante para SEO ao organizar metadados, links relacionados e informações corporativas que agregam credibilidade ao site.
 
 ### h1, h2, h3
-Definem hierarquia de cabeçalhos. Cruciais para SEO pois estruturam o conteúdo para motores de busca e fundamentais para acessibilidade permitindo navegação por cabeçalhos em leitores de tela.
+Definem hierarquia de cabeçalhos, sendo cruciais para a estrutura semântica do YouTube. São fundamentais para SEO pois estruturam o conteúdo de forma que motores de busca compreendam a importância relativa de cada seção. Para acessibilidade, são essenciais pois permitem que usuários de leitores de tela naveguem rapidamente entre seções usando atalhos de teclado específicos para cabeçalhos.
 
-### p
-Representa parágrafos de texto. Base da estrutura textual semântica, facilita a leitura por tecnologias assistivas e melhora a indexação de conteúdo textual pelos motores de busca.
-
-### strong, em
-Indicam importância (strong) e ênfase (em) no texto. Melhoram a acessibilidade transmitindo entonação para leitores de tela e ajudam o SEO a identificar termos importantes no conteúdo.
-
-### figure, figcaption
-Agrupam conteúdo visual com sua legenda. Essenciais para acessibilidade ao fornecer contexto para imagens e vídeos, e importantes para SEO ao associar descrições textuais ao conteúdo visual.
+### figure e figcaption
+Agrupam conteúdo visual com sua legenda, sendo essenciais para thumbnails de vídeos no YouTube. Para acessibilidade, fornecem contexto completo para imagens e vídeos, permitindo que usuários com deficiência visual compreendam o conteúdo visual através das legendas. São importantes para SEO ao associar descrições textuais ao conteúdo visual, tornando-o indexável e compreensível pelos motores de busca.
 
 ### img
-Incorpora imagens no documento. Fundamental para acessibilidade quando usado com atributo alt descritivo e importante para SEO ao fornecer conteúdo visual indexável pelos motores de busca.
+Incorpora imagens no documento, sendo fundamental para thumbnails e avatares no YouTube. É crucial para acessibilidade quando usado com atributo alt descritivo, permitindo que leitores de tela descrevam as imagens para usuários com deficiência visual. Para SEO, fornece conteúdo visual indexável pelos motores de busca através dos atributos alt e title.
 
 ### time
-Representa datas e horários específicos. Melhora a acessibilidade fornecendo informações temporais estruturadas e facilita o SEO ao permitir que motores de busca compreendam dados temporais.
+Representa datas e horários específicos, perfeita para marcar quando vídeos foram publicados no YouTube. Melhora a acessibilidade fornecendo informações temporais estruturadas que podem ser interpretadas corretamente por tecnologias assistivas. Para SEO, facilita que motores de busca compreendam e indexem dados temporais, permitindo filtros por data e melhor organização cronológica do conteúdo.
 
 ### address
-Define informações de contato. Importante para acessibilidade ao identificar dados de contato e valioso para SEO ao fornecer informações estruturadas sobre autoria e contato.
-
-### mark
-Destaca texto relevante no contexto atual. Melhora a acessibilidade sinalizando conteúdo destacado para leitores de tela e pode ajudar o SEO ao enfatizar termos importantes contextualmente.
-
-### form
-Cria formulários para entrada de dados. Essencial para acessibilidade quando bem estruturado com labels e importante para SEO ao permitir interação do usuário e coleta de dados.
-
-### table, caption, thead, tbody, tfoot
-Estruturam dados tabulares de forma semântica. Cruciais para acessibilidade permitindo navegação eficiente por tabelas em leitores de tela e importantes para SEO ao organizar dados estruturados.
-
-### details, summary
-Criam conteúdo expansível interativo. Melhoram a acessibilidade fornecendo controle sobre a exibição de conteúdo e podem beneficiar o SEO ao organizar informações de forma hierárquica.
-
-### abbr
-Define abreviações e acrônimos. Fundamental para acessibilidade ao fornecer expansões de termos abreviados e útil para SEO ao esclarecer terminologias específicas.
-
-### fieldset, legend
-Agrupam e rotulam campos de formulário relacionados. Essenciais para acessibilidade ao organizar controles de forma lógica para leitores de tela e melhoram a usabilidade geral dos formulários.
-
-### dialog
-Cria caixas de diálogo e janelas modais. Importante para acessibilidade ao gerenciar foco e navegação em conteúdo modal e melhora a experiência do usuário com interações estruturadas.
+Define informações de contato, ideal para dados dos criadores de conteúdo no YouTube. É importante para acessibilidade ao identificar claramente dados de contato e autoria para usuários de tecnologias assistivas. Para SEO, é valioso ao fornecer informações estruturadas sobre autoria e contato, contribuindo para a credibilidade e autoridade do conteúdo nos algoritmos de busca.
