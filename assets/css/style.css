@@ -5,6 +5,19 @@
     box-sizing: border-box;
 }
 
+/* Classe para elementos visíveis apenas para leitores de tela */
+.desc-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #181a1b;
