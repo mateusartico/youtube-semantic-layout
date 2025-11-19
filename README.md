@@ -4,6 +4,8 @@ Projeto de clone do YouTube construído com HTML5 e CSS3 semânticos para demons
 
 Cada tag utilizada é explicada no código HTML com comentários detalhados sobre sua função, contexto de uso e impacto na acessibilidade/SEO. Este README complementa essas explicações com descrições mais aprofundadas.
 
+PS.: Para mudar para a página de canal, basta clicar na "conta do Google", no canto superior direito.
+
 ---
 
 ## 🛠️ Tecnologias Utilizadas
