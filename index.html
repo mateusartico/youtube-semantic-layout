@@ -95,8 +95,9 @@
         <!--
         o elemento aside representa conteúdo relacionado ao conteúdo principal.
         nesse contexto, ele contém a barra lateral de navegação do YouTube.
+        role="navigation" e aria-label fornecem contexto claro para leitores de tela.
         -->
-        <aside class="sidebar">
+        <aside class="sidebar" role="navigation" aria-label="Menu de navegação principal">
             <nav>
                 <ul>
                     <li><a href="#" class="active"><span class="material-icons">home</span>Início</a></li>
@@ -144,13 +145,16 @@
                 </nav>
             </section>
 
-            <section class="video-grid">
+            <!-- Seção principal de vídeos com role para identificar região de conteúdo principal -->
+        <section class="video-grid" role="region" aria-labelledby="videos-heading">
+                <h2 id="videos-heading" class="desc-only">Vídeos recomendados</h2>
                 <section class="sponsored">
                     <!--
                     o elemento article representa um conteúdo independente e autocontido.
                     nesse contexto, ele representa um vídeo individual com suas informações.
+                    role="article" reforça a semântica para tecnologias assistivas.
                     -->
-                    <article class="video">
+                    <article class="video" role="article">
                         <header>
                             <!--
                             o elemento figure representa conteúdo autocontido com uma legenda opcional.
@@ -250,8 +254,10 @@
 
             </section>
 
-            <section class="shorts">
+            <!-- Seção de Shorts com role complementary e aria-describedby para contexto adicional -->
+            <section class="shorts" role="complementary" aria-describedby="shorts-description">
                 <h2>Shorts</h2>
+                <p id="shorts-description" class="desc-only">Vídeos curtos e verticais do YouTube</p>
                 <ul class="shorts-grid">
                     <li>
                         <figure class="short">

@@ -9,7 +9,8 @@ Cada tag utilizada é explicada no código HTML com comentários detalhados sobr
 ## 🛠️ Tecnologias Utilizadas
 
 * **HTML5:** Estrutura semântica seguindo as melhores práticas de acessibilidade
-* **CSS3:** Estilização dentro das regras exigidadas
+* **CSS3:** Estilização responsiva com Flexbox e Grid
+* **ARIA:** Atributos de acessibilidade para reforçar a semântica
 
 ---
 
@@ -73,3 +74,31 @@ Representa datas e horários específicos, perfeita para marcar quando vídeos f
 
 ### address
 Define informações de contato, ideal para dados dos criadores de conteúdo no YouTube. É importante para acessibilidade ao identificar claramente dados de contato e autoria para usuários de tecnologias assistivas. Para SEO, é valioso ao fornecer informações estruturadas sobre autoria e contato, contribuindo para a credibilidade e autoridade do conteúdo nos algoritmos de busca.
+
+---
+
+## ♿ Atributos ARIA para Acessibilidade
+
+O projeto utiliza atributos ARIA (Accessible Rich Internet Applications) para reforçar a acessibilidade em elementos-chave:
+
+### Atributos ARIA Implementados
+
+| Atributo | Elemento | Justificativa de Uso |
+| :--- | :--- | :--- |
+| `role="region"` | Seção de vídeos | Identifica a área principal de conteúdo para navegação por landmarks |
+| `aria-labelledby` | Seção de vídeos | Conecta a seção ao seu título descritivo para contexto |
+| `role="complementary"` | Seção Shorts | Define conteúdo complementar distinto do principal |
+| `aria-describedby` | Seção Shorts | Fornece descrição adicional sobre o tipo de conteúdo |
+| `role="navigation"` | Sidebar | Reforça a semântica de navegação para tecnologias assistivas |
+| `aria-label` | Sidebar | Fornece rótulo descritivo para a área de navegação |
+
+### Explicações Detalhadas dos Atributos ARIA
+
+#### role="region" + aria-labelledby
+Utilizado na seção principal de vídeos para criar um landmark identificado por leitores de tela. O `aria-labelledby` conecta a seção ao título "Vídeos recomendados" (oculto visualmente com `.desc-only`), permitindo que usuários de tecnologias assistivas compreendam rapidamente o propósito da área. Isso melhora significativamente a navegação por landmarks, uma funcionalidade essencial para usuários de leitores de tela.
+
+#### role="complementary" + aria-describedby
+Aplicado na seção de Shorts para identificar este conteúdo como complementar ao principal. O `aria-describedby` referencia uma descrição oculta que explica o que são Shorts, fornecendo contexto adicional para usuários que podem não estar familiarizados com este formato de vídeo. Esta combinação garante que a hierarquia de conteúdo seja clara para tecnologias assistivas.
+
+#### role="navigation" + aria-label
+Implementado na sidebar para reforçar sua função de navegação, mesmo já sendo um elemento `<aside>` com `<nav>` interno. O `aria-label` fornece um rótulo claro "Menu de navegação principal", eliminando qualquer ambiguidade sobre a função desta área. Isso é especialmente útil quando há múltiplas áreas de navegação na página, permitindo distinção clara entre elas.
